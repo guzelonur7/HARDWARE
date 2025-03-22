@@ -1,0 +1,72 @@
+Added Component: Designator=J7(7466103)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466103?qs=IfoubJuuTRbG1djUcU3ZdQ%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=J8(7466103)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466103?qs=IfoubJuuTRbG1djUcU3ZdQ%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=J9(7466103)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466103?qs=IfoubJuuTRbG1djUcU3ZdQ%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=J10(7466103)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466103?qs=IfoubJuuTRbG1djUcU3ZdQ%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=J11(7466103)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466103?qs=IfoubJuuTRbG1djUcU3ZdQ%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=J12(7466103)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466103?qs=IfoubJuuTRbG1djUcU3ZdQ%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VIN Pin=J7-1
+Added Pin To Net: NetName=VIN Pin=J7-1
+Added Pin To Net: NetName=VIN Pin=J7-1
+Added Pin To Net: NetName=VIN Pin=J7-1
+Added Pin To Net: NetName=VIN Pin=J7-1
+Added Pin To Net: NetName=VIN Pin=J7-1
+Added Pin To Net: NetName=VIN Pin=J7-1
+Added Pin To Net: NetName=VIN Pin=J8-1
+Added Pin To Net: NetName=VIN Pin=J8-1
+Added Pin To Net: NetName=VIN Pin=J8-1
+Added Pin To Net: NetName=VIN Pin=J8-1
+Added Pin To Net: NetName=VIN Pin=J8-1
+Added Pin To Net: NetName=VIN Pin=J8-1
+Added Pin To Net: NetName=VIN Pin=J8-1
+Added Pin To Net: NetName=VIN Pin=J9-1
+Added Pin To Net: NetName=VIN Pin=J9-1
+Added Pin To Net: NetName=VIN Pin=J9-1
+Added Pin To Net: NetName=VIN Pin=J9-1
+Added Pin To Net: NetName=VIN Pin=J9-1
+Added Pin To Net: NetName=VIN Pin=J9-1
+Added Pin To Net: NetName=VIN Pin=J9-1
+Added Pin To Net: NetName=GND Pin=J10-1
+Added Pin To Net: NetName=GND Pin=J10-1
+Added Pin To Net: NetName=GND Pin=J10-1
+Added Pin To Net: NetName=GND Pin=J10-1
+Added Pin To Net: NetName=GND Pin=J10-1
+Added Pin To Net: NetName=GND Pin=J10-1
+Added Pin To Net: NetName=GND Pin=J10-1
+Added Pin To Net: NetName=GND Pin=J11-1
+Added Pin To Net: NetName=GND Pin=J11-1
+Added Pin To Net: NetName=GND Pin=J11-1
+Added Pin To Net: NetName=GND Pin=J11-1
+Added Pin To Net: NetName=GND Pin=J11-1
+Added Pin To Net: NetName=GND Pin=J11-1
+Added Pin To Net: NetName=GND Pin=J11-1
+Added Pin To Net: NetName=GND Pin=J12-1
+Added Pin To Net: NetName=GND Pin=J12-1
+Added Pin To Net: NetName=GND Pin=J12-1
+Added Pin To Net: NetName=GND Pin=J12-1
+Added Pin To Net: NetName=GND Pin=J12-1
+Added Pin To Net: NetName=GND Pin=J12-1
+Added Pin To Net: NetName=GND Pin=J12-1
+Added Member To Class: ClassName=Busbar Member=Component J7 7466103
+Added Member To Class: ClassName=Busbar Member=Component J8 7466103
+Added Member To Class: ClassName=Busbar Member=Component J9 7466103
+Added Member To Class: ClassName=Busbar Member=Component J10 7466103
+Added Member To Class: ClassName=Busbar Member=Component J11 7466103
+Added Member To Class: ClassName=Busbar Member=Component J12 7466103

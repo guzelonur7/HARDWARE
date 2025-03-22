@@ -1,0 +1,75 @@
+Removed Pin From Net: NetName=GND Pin=J1-3
+Removed Pin From Net: NetName=GND Pin=J3-3
+Removed Pin From Net: NetName=GND Pin=J4-3
+Removed Pin From Net: NetName=GND Pin=J6-2
+Removed Pin From Net: NetName=I_PHASE_A Pin=J6-3
+Removed Pin From Net: NetName=GND Pin=J7-2
+Removed Pin From Net: NetName=I_PHASE_B Pin=J7-3
+Removed Pin From Net: NetName=GND Pin=J16-2
+Removed Pin From Net: NetName=I_PHASE_C Pin=J16-3
+Removed Pin From Net: NetName=VS_A Pin=J21-2
+Removed Pin From Net: NetName=GND Pin=J21-3
+Removed Pin From Net: NetName=VS_B Pin=J22-2
+Removed Pin From Net: NetName=GND Pin=J22-3
+Removed Pin From Net: NetName=VS_C Pin=J23-2
+Removed Pin From Net: NetName=GND Pin=J23-3
+Removed Pin From Net: NetName=GLA Pin=J24-2
+Removed Pin From Net: NetName=GND Pin=J24-3
+Removed Pin From Net: NetName=GLB Pin=J25-2
+Removed Pin From Net: NetName=GND Pin=J25-3
+Removed Pin From Net: NetName=GLC Pin=J26-2
+Removed Pin From Net: NetName=GND Pin=J26-3
+Change Component Footprint: Designator=J1 Old Footprint=HEADER_FEMALE_SMD_2X2_2.54MM New Footprint=HEADER_FEMALE_SMD_2X3_1.27MM
+Change Component Footprint: Designator=J3 Old Footprint=HEADER_FEMALE_SMD_2X2_2.54MM New Footprint=HEADER_FEMALE_SMD_2X3_1.27MM
+Change Component Footprint: Designator=J4 Old Footprint=HEADER_FEMALE_SMD_2X2_2.54MM New Footprint=HEADER_FEMALE_SMD_2X3_1.27MM
+Change Component Footprint: Designator=J6 Old Footprint=HEADER_FEMALE_SMD_2X2_2.54MM New Footprint=HEADER_FEMALE_SMD_2X3_1.27MM
+Change Component Footprint: Designator=J7 Old Footprint=HEADER_FEMALE_SMD_2X2_2.54MM New Footprint=HEADER_FEMALE_SMD_2X3_1.27MM
+Change Component Footprint: Designator=J16 Old Footprint=HEADER_FEMALE_SMD_2X2_2.54MM New Footprint=HEADER_FEMALE_SMD_2X3_1.27MM
+Change Component Footprint: Designator=J21 Old Footprint=HEADER_FEMALE_SMD_2X2_2.54MM New Footprint=HEADER_FEMALE_SMD_2X3_1.27MM
+Change Component Footprint: Designator=J22 Old Footprint=HEADER_FEMALE_SMD_2X2_2.54MM New Footprint=HEADER_FEMALE_SMD_2X3_1.27MM
+Change Component Footprint: Designator=J23 Old Footprint=HEADER_FEMALE_SMD_2X2_2.54MM New Footprint=HEADER_FEMALE_SMD_2X3_1.27MM
+Change Component Footprint: Designator=J24 Old Footprint=HEADER_FEMALE_SMD_2X2_2.54MM New Footprint=HEADER_FEMALE_SMD_2X3_1.27MM
+Change Component Footprint: Designator=J25 Old Footprint=HEADER_FEMALE_SMD_2X2_2.54MM New Footprint=HEADER_FEMALE_SMD_2X3_1.27MM
+Change Component Footprint: Designator=J26 Old Footprint=HEADER_FEMALE_SMD_2X2_2.54MM New Footprint=HEADER_FEMALE_SMD_2X3_1.27MM
+Added Pin To Net: NetName=GND Pin=J1-2
+Added Pin To Net: NetName=GND Pin=J1-6
+Added Pin To Net: NetName=GND Pin=J3-2
+Added Pin To Net: NetName=GND Pin=J3-6
+Added Pin To Net: NetName=GND Pin=J4-2
+Added Pin To Net: NetName=GND Pin=J4-6
+Added Pin To Net: NetName=I_PHASE_A Pin=J6-2
+Added Pin To Net: NetName=GND Pin=J6-3
+Added Pin To Net: NetName=GND Pin=J6-5
+Added Pin To Net: NetName=I_PHASE_A Pin=J6-6
+Added Pin To Net: NetName=I_PHASE_B Pin=J7-2
+Added Pin To Net: NetName=GND Pin=J7-3
+Added Pin To Net: NetName=GND Pin=J7-5
+Added Pin To Net: NetName=I_PHASE_B Pin=J7-6
+Added Pin To Net: NetName=I_PHASE_C Pin=J16-2
+Added Pin To Net: NetName=GND Pin=J16-3
+Added Pin To Net: NetName=GND Pin=J16-5
+Added Pin To Net: NetName=I_PHASE_C Pin=J16-6
+Added Pin To Net: NetName=GND Pin=J21-2
+Added Pin To Net: NetName=VS_A Pin=J21-3
+Added Pin To Net: NetName=VS_A Pin=J21-5
+Added Pin To Net: NetName=GND Pin=J21-6
+Added Pin To Net: NetName=GND Pin=J22-2
+Added Pin To Net: NetName=VS_B Pin=J22-3
+Added Pin To Net: NetName=VS_B Pin=J22-5
+Added Pin To Net: NetName=GND Pin=J22-6
+Added Pin To Net: NetName=GND Pin=J23-2
+Added Pin To Net: NetName=VS_C Pin=J23-3
+Added Pin To Net: NetName=VS_C Pin=J23-5
+Added Pin To Net: NetName=GND Pin=J23-6
+Added Pin To Net: NetName=GND Pin=J24-2
+Added Pin To Net: NetName=GLA Pin=J24-3
+Added Pin To Net: NetName=GND Pin=J24-5
+Added Pin To Net: NetName=GND Pin=J24-6
+Added Pin To Net: NetName=GND Pin=J25-2
+Added Pin To Net: NetName=GLB Pin=J25-3
+Added Pin To Net: NetName=GND Pin=J25-5
+Added Pin To Net: NetName=GND Pin=J25-6
+Added Pin To Net: NetName=GND Pin=J26-2
+Added Pin To Net: NetName=GLC Pin=J26-3
+Added Pin To Net: NetName=GND Pin=J26-5
+Added Pin To Net: NetName=GND Pin=J26-6

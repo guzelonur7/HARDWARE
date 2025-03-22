@@ -1,0 +1,186 @@
+Change Component Footprint: Designator=C7 Old Footprint=C_THT_6.3X11X2.5 New Footprint=C_THT_13X25X5
+Change Component Comment : Designator=C7 Old Comment=CAP_POL_THT_22uF_100V New Comment=ESK107M160AL4AA
+Change component parameters: Designator = "C7" ("C7"); Footprint = "C_THT_6.3X11X2.5"; UniqueID = "\DAANPEST" ("\DAANPEST")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/KEMET/ESK107M160AL4AA?qs=gt1LBUVyoHn74e7F9%2F5Ihw%3D%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "160V"; VariantName = "[No Variations]"
+Added Component: Designator=C1(C_THT_13X25X5)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/KEMET/ESK107M160AL4AA?qs=gt1LBUVyoHn74e7F9%2F5Ihw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "160V"; VariantName = "[No Variations]"
+Added Component: Designator=C2(C_THT_13X25X5)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/KEMET/ESK107M160AL4AA?qs=gt1LBUVyoHn74e7F9%2F5Ihw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "160V"; VariantName = "[No Variations]"
+Added Component: Designator=C3(C_THT_13X25X5)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/KEMET/ESK107M160AL4AA?qs=gt1LBUVyoHn74e7F9%2F5Ihw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "160V"; VariantName = "[No Variations]"
+Added Component: Designator=C4(C_THT_13X25X5)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/KEMET/ESK107M160AL4AA?qs=gt1LBUVyoHn74e7F9%2F5Ihw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "160V"; VariantName = "[No Variations]"
+Added Component: Designator=C5(C_THT_13X25X5)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/KEMET/ESK107M160AL4AA?qs=gt1LBUVyoHn74e7F9%2F5Ihw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "160V"; VariantName = "[No Variations]"
+Added Component: Designator=C6(C_THT_13X25X5)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/KEMET/ESK107M160AL4AA?qs=gt1LBUVyoHn74e7F9%2F5Ihw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "160V"; VariantName = "[No Variations]"
+Added Component: Designator=C8(C_THT_13X25X5)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/KEMET/ESK107M160AL4AA?qs=gt1LBUVyoHn74e7F9%2F5Ihw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "160V"; VariantName = "[No Variations]"
+Added Component: Designator=C9(C_THT_13X25X5)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/KEMET/ESK107M160AL4AA?qs=gt1LBUVyoHn74e7F9%2F5Ihw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "160V"; VariantName = "[No Variations]"
+Added Component: Designator=C10(C_THT_13X25X5)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/KEMET/ESK107M160AL4AA?qs=gt1LBUVyoHn74e7F9%2F5Ihw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "160V"; VariantName = "[No Variations]"
+Added Component: Designator=C11(C_THT_13X25X5)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/KEMET/ESK107M160AL4AA?qs=gt1LBUVyoHn74e7F9%2F5Ihw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "160V"; VariantName = "[No Variations]"
+Added Component: Designator=C12(C_THT_13X25X5)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/KEMET/ESK107M160AL4AA?qs=gt1LBUVyoHn74e7F9%2F5Ihw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "160V"; VariantName = "[No Variations]"
+Added Component: Designator=C25(C_THT_13X25X5)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/KEMET/ESK107M160AL4AA?qs=gt1LBUVyoHn74e7F9%2F5Ihw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "160V"; VariantName = "[No Variations]"
+Added Component: Designator=C26(C_THT_13X25X5)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/KEMET/ESK107M160AL4AA?qs=gt1LBUVyoHn74e7F9%2F5Ihw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "160V"; VariantName = "[No Variations]"
+Added Component: Designator=C27(C_THT_13X25X5)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/KEMET/ESK107M160AL4AA?qs=gt1LBUVyoHn74e7F9%2F5Ihw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "160V"; VariantName = "[No Variations]"
+Added Component: Designator=C28(C_THT_13X25X5)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/KEMET/ESK107M160AL4AA?qs=gt1LBUVyoHn74e7F9%2F5Ihw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "160V"; VariantName = "[No Variations]"
+Added Component: Designator=C29(C_THT_13X25X5)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/KEMET/ESK107M160AL4AA?qs=gt1LBUVyoHn74e7F9%2F5Ihw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "160V"; VariantName = "[No Variations]"
+Added Component: Designator=C30(C_THT_13X25X5)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/KEMET/ESK107M160AL4AA?qs=gt1LBUVyoHn74e7F9%2F5Ihw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "160V"; VariantName = "[No Variations]"
+Added Component: Designator=C31(C_THT_13X25X5)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/KEMET/ESK107M160AL4AA?qs=gt1LBUVyoHn74e7F9%2F5Ihw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "160V"; VariantName = "[No Variations]"
+Added Component: Designator=C32(C_THT_13X25X5)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/KEMET/ESK107M160AL4AA?qs=gt1LBUVyoHn74e7F9%2F5Ihw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "160V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VIN Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=VIN Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=VIN Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=VIN Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C4-2
+Added Pin To Net: NetName=VIN Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=VIN Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Pin To Net: NetName=VIN Pin=C8-1
+Added Pin To Net: NetName=GND Pin=C8-2
+Added Pin To Net: NetName=VIN Pin=C9-1
+Added Pin To Net: NetName=GND Pin=C9-2
+Added Pin To Net: NetName=VIN Pin=C10-1
+Added Pin To Net: NetName=GND Pin=C10-2
+Added Pin To Net: NetName=VIN Pin=C11-1
+Added Pin To Net: NetName=GND Pin=C11-2
+Added Pin To Net: NetName=VIN Pin=C12-1
+Added Pin To Net: NetName=GND Pin=C12-2
+Added Pin To Net: NetName=VIN Pin=C25-1
+Added Pin To Net: NetName=GND Pin=C25-2
+Added Pin To Net: NetName=VIN Pin=C26-1
+Added Pin To Net: NetName=GND Pin=C26-2
+Added Pin To Net: NetName=VIN Pin=C27-1
+Added Pin To Net: NetName=GND Pin=C27-2
+Added Pin To Net: NetName=VIN Pin=C28-1
+Added Pin To Net: NetName=GND Pin=C28-2
+Added Pin To Net: NetName=VIN Pin=C29-1
+Added Pin To Net: NetName=GND Pin=C29-2
+Added Pin To Net: NetName=VIN Pin=C30-1
+Added Pin To Net: NetName=GND Pin=C30-2
+Added Pin To Net: NetName=VIN Pin=C31-1
+Added Pin To Net: NetName=GND Pin=C31-2
+Added Pin To Net: NetName=VIN Pin=C32-1
+Added Pin To Net: NetName=GND Pin=C32-2
+Added Pin To Net: NetName=+3V3 Pin=J24-1
+Added Member To Class: ClassName=Busbar Member=Component C1 ESK107M160AL4AA
+Added Member To Class: ClassName=Busbar Member=Component C2 ESK107M160AL4AA
+Added Member To Class: ClassName=Busbar Member=Component C3 ESK107M160AL4AA
+Added Member To Class: ClassName=Busbar Member=Component C4 ESK107M160AL4AA
+Added Member To Class: ClassName=Busbar Member=Component C5 ESK107M160AL4AA
+Added Member To Class: ClassName=Busbar Member=Component C6 ESK107M160AL4AA
+Added Member To Class: ClassName=Busbar Member=Component C8 ESK107M160AL4AA
+Added Member To Class: ClassName=Busbar Member=Component C9 ESK107M160AL4AA
+Added Member To Class: ClassName=Busbar Member=Component C10 ESK107M160AL4AA
+Added Member To Class: ClassName=Busbar Member=Component C11 ESK107M160AL4AA
+Added Member To Class: ClassName=Busbar Member=Component C12 ESK107M160AL4AA
+Added Member To Class: ClassName=Busbar Member=Component C14 0603
+Added Member To Class: ClassName=Busbar Member=Component C16 0603
+Added Member To Class: ClassName=Busbar Member=Component C18 0603
+Added Member To Class: ClassName=Busbar Member=Component C19 0603
+Added Member To Class: ClassName=Busbar Member=Component C20 0603
+Added Member To Class: ClassName=Busbar Member=Component C22 0603
+Added Member To Class: ClassName=Busbar Member=Component C24 0603
+Added Member To Class: ClassName=Busbar Member=Component C25 ESK107M160AL4AA
+Added Member To Class: ClassName=Busbar Member=Component C26 ESK107M160AL4AA
+Added Member To Class: ClassName=Busbar Member=Component C27 ESK107M160AL4AA
+Added Member To Class: ClassName=Busbar Member=Component C28 ESK107M160AL4AA
+Added Member To Class: ClassName=Busbar Member=Component C29 ESK107M160AL4AA
+Added Member To Class: ClassName=Busbar Member=Component C30 ESK107M160AL4AA
+Added Member To Class: ClassName=Busbar Member=Component C31 ESK107M160AL4AA
+Added Member To Class: ClassName=Busbar Member=Component C32 ESK107M160AL4AA
+Added Member To Class: ClassName=Busbar Member=Component J1 74651195R
+Added Member To Class: ClassName=Busbar Member=Component J3 7466103
+Added Member To Class: ClassName=Busbar Member=Component J4 7466103
+Added Member To Class: ClassName=Busbar Member=Component J6 7466103
+Added Member To Class: ClassName=Busbar Member=Component J9 7466103
+Added Member To Class: ClassName=Busbar Member=Component J11 7466103
+Added Member To Class: ClassName=Busbar Member=Component J12 7466103
+Added Member To Class: ClassName=Busbar Member=Component J21 HEADER
+Added Member To Class: ClassName=Busbar Member=Component J22 HEADER
+Added Member To Class: ClassName=Busbar Member=Component J23 HEADER
+Added Member To Class: ClassName=Busbar Member=Component J24 HEADER
+Added Member To Class: ClassName=Busbar Member=Component J25 HEADER
+Added Member To Class: ClassName=Busbar Member=Component J26 HEADER
+Added Member To Class: ClassName=Busbar Member=Component R4 0603
+Added Member To Class: ClassName=Busbar Member=Component R5 0603
+Added Member To Class: ClassName=Busbar Member=Component R6 0603
+Added Member To Class: ClassName=Busbar Member=Component R8 0603
+Added Member To Class: ClassName=Busbar Member=Component U1 LM321LVIDBVR
+Added Member To Class: ClassName=Busbar Member=Component U3 LM321LVIDBVR

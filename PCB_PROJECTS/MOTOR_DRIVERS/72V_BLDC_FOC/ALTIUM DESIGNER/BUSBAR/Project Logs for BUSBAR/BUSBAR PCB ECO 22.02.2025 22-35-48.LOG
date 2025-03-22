@@ -1,0 +1,18 @@
+Added Component: Designator=C19(C_THT_12.5X20)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Panasonic/ECA-2AM221B?qs=hnUcNC2tU0psbcmlzR8oQA%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "220u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "100V"; VariantName = "[No Variations]"
+Added Component: Designator=C20(C_THT_12.5X20)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Panasonic/ECA-2AM221B?qs=hnUcNC2tU0psbcmlzR8oQA%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "220u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "100V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VIN Pin=C19-1
+Added Pin To Net: NetName=GND Pin=C19-2
+Added Pin To Net: NetName=VIN Pin=C20-1
+Added Pin To Net: NetName=GND Pin=C20-2
+Added Member To Class: ClassName=Busbar Member=Component C19 CAP_POL
+Added Member To Class: ClassName=Busbar Member=Component C20 CAP_POL
+Added Member To Class: ClassName=Busbar Member=Component J3 74651195R
+Added Member To Class: ClassName=Busbar Member=Component J4 74651195R

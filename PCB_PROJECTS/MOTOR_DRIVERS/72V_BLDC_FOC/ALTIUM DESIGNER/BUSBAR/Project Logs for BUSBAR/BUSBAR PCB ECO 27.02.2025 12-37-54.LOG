@@ -1,0 +1,310 @@
+Change Component Designator: OldDesignator=C1 NewDesignator=C3
+Change Component Designator: OldDesignator=C2 NewDesignator=C4
+Change Component Designator: OldDesignator=C3 NewDesignator=C5
+Change Component Designator: OldDesignator=C4 NewDesignator=C6
+Change Component Designator: OldDesignator=C5 NewDesignator=C7
+Change Component Designator: OldDesignator=C6 NewDesignator=C8
+Change Component Designator: OldDesignator=C7 NewDesignator=C9
+Change Component Designator: OldDesignator=C8 NewDesignator=C10
+Change Component Designator: OldDesignator=C9 NewDesignator=C11
+Change Component Designator: OldDesignator=C10 NewDesignator=C12
+Change Component Designator: OldDesignator=C11 NewDesignator=C13
+Change Component Designator: OldDesignator=C12 NewDesignator=C14
+Added Component: Designator=C1(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C2(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C15(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "Value"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "Voltage"; VariantName = "[No Variations]"
+Added Component: Designator=C16(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C17(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C18(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "Value"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "Voltage"; VariantName = "[No Variations]"
+Added Component: Designator=C19(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C20(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C21(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "Value"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "Voltage"; VariantName = "[No Variations]"
+Added Component: Designator=C22(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C23(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1u"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=C24(C_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "Value"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "Voltage"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found CAPPRD250W50D630H1250
+Added Component: Designator=J3(PAD_D8.2_H3.4)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466203?qs=IfoubJuuTRb774UUJ30heA%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=J4(PAD_D8.2_H3.4)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466203?qs=IfoubJuuTRb774UUJ30heA%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=J5(PAD_D8.2_H3.4)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466203?qs=IfoubJuuTRb774UUJ30heA%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=J6(PAD_D8.2_H3.4)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466203?qs=IfoubJuuTRb774UUJ30heA%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=J7(PAD_D8.2_H3.4)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466203?qs=IfoubJuuTRb774UUJ30heA%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=J8(PAD_D8.2_H3.4)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466203?qs=IfoubJuuTRb774UUJ30heA%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=J9(PAD_D8.2_H3.4)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466203?qs=IfoubJuuTRb774UUJ30heA%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=J10(PAD_D8.2_H3.4)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466203?qs=IfoubJuuTRb774UUJ30heA%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=J11(PAD_D8.2_H3.4)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466203?qs=IfoubJuuTRb774UUJ30heA%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=J12(PAD_D8.2_H3.4)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466203?qs=IfoubJuuTRb774UUJ30heA%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=J13(PAD_D8.2_H3.4)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466203?qs=IfoubJuuTRb774UUJ30heA%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=J14(PAD_D8.2_H3.4)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466203?qs=IfoubJuuTRb774UUJ30heA%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=R1(R_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "Value"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Watt"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R2(R_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "%1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Watt"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R3(R_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "Value"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Watt"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R4(R_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "%1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Watt"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R5(R_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "Value"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Watt"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R6(R_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "%1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Watt"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R7(R_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "%1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Watt"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R8(R_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "Value"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Watt"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R9(R_0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "%1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "3K3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Watt"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U1(SOT23-5)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Texas-Instruments/LM321LVIDBVR?qs=qSfuJ%252Bfl%2Fd66sZ569ResAQ%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=U2(SOT23-5)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Texas-Instruments/LM321LVIDBVR?qs=qSfuJ%252Bfl%2Fd66sZ569ResAQ%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=U3(SOT23-5)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Texas-Instruments/LM321LVIDBVR?qs=qSfuJ%252Bfl%2Fd66sZ569ResAQ%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=U4(SOT23-5)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Texas-Instruments/LM321LVIDBVR?qs=qSfuJ%252Bfl%2Fd66sZ569ResAQ%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C15-2
+Added Pin To Net: NetName=GND Pin=C16-2
+Added Pin To Net: NetName=GND Pin=C17-2
+Added Pin To Net: NetName=GND Pin=C18-2
+Added Pin To Net: NetName=GND Pin=C19-2
+Added Pin To Net: NetName=GND Pin=C20-2
+Added Pin To Net: NetName=GND Pin=C21-2
+Added Pin To Net: NetName=GND Pin=C22-2
+Added Pin To Net: NetName=GND Pin=C23-2
+Added Pin To Net: NetName=GND Pin=C24-2
+Added Pin To Net: NetName=VIN Pin=J3-1
+Added Pin To Net: NetName=GND Pin=J4-1
+Added Pin To Net: NetName=VIN Pin=J5-1
+Added Pin To Net: NetName=GND Pin=J6-1
+Added Pin To Net: NetName=VIN Pin=J7-1
+Added Pin To Net: NetName=GND Pin=J8-1
+Added Pin To Net: NetName=VIN Pin=J9-1
+Added Pin To Net: NetName=GND Pin=J10-1
+Added Pin To Net: NetName=VIN Pin=J11-1
+Added Pin To Net: NetName=GND Pin=J12-1
+Added Pin To Net: NetName=VIN Pin=J13-1
+Added Pin To Net: NetName=GND Pin=J14-1
+Added Pin To Net: NetName=GND Pin=R2-1
+Added Pin To Net: NetName=GND Pin=R4-1
+Added Pin To Net: NetName=GND Pin=R6-1
+Added Pin To Net: NetName=VIN Pin=R7-2
+Added Pin To Net: NetName=GND Pin=R9-1
+Added Pin To Net: NetName=GND Pin=U1-2
+Added Pin To Net: NetName=GND Pin=U2-2
+Added Pin To Net: NetName=GND Pin=U3-2
+Added Pin To Net: NetName=GND Pin=U4-2
+Added Pin To Net: NetName=+3V3 Pin=C1-1
+Added Pin To Net: NetName=+3V3 Pin=C2-1
+Added Pin To Net: NetName=+3V3 Pin=C16-1
+Added Pin To Net: NetName=+3V3 Pin=C17-1
+Added Pin To Net: NetName=+3V3 Pin=C19-1
+Added Pin To Net: NetName=+3V3 Pin=C20-1
+Added Pin To Net: NetName=+3V3 Pin=C22-1
+Added Pin To Net: NetName=+3V3 Pin=C23-1
+Added Pin To Net: NetName=+3V3 Pin=U1-5
+Added Pin To Net: NetName=+3V3 Pin=U2-5
+Added Pin To Net: NetName=+3V3 Pin=U3-5
+Added Pin To Net: NetName=+3V3 Pin=U4-5
+Added Net: Name=+3V3
+Added Pin To Net: NetName=BAT_VOLTAGE Pin=C24-1
+Added Pin To Net: NetName=BAT_VOLTAGE Pin=R8-2
+Added Net: Name=BAT_VOLTAGE
+Added Pin To Net: NetName=NetR1_1 Pin=R1-1
+Added Pin To Net: NetName=NetR1_1 Pin=U1-3
+Added Pin To Net: NetName=NetR1_1 Pin=U1-4
+Added Net: Name=NetR1_1
+Added Pin To Net: NetName=NetR3_1 Pin=R3-1
+Added Pin To Net: NetName=NetR3_1 Pin=U2-3
+Added Pin To Net: NetName=NetR3_1 Pin=U2-4
+Added Net: Name=NetR3_1
+Added Pin To Net: NetName=NetR4_2 Pin=R4-2
+Added Pin To Net: NetName=NetR4_2 Pin=U2-1
+Added Net: Name=NetR4_2
+Added Pin To Net: NetName=NetR5_1 Pin=R5-1
+Added Pin To Net: NetName=NetR5_1 Pin=U3-3
+Added Pin To Net: NetName=NetR5_1 Pin=U3-4
+Added Net: Name=NetR5_1
+Added Pin To Net: NetName=NetR6_2 Pin=R6-2
+Added Pin To Net: NetName=NetR6_2 Pin=U3-1
+Added Net: Name=NetR6_2
+Added Pin To Net: NetName=NetR7_1 Pin=R7-1
+Added Pin To Net: NetName=NetR7_1 Pin=R9-2
+Added Pin To Net: NetName=NetR7_1 Pin=U4-1
+Added Net: Name=NetR7_1
+Added Pin To Net: NetName=NetR8_1 Pin=R8-1
+Added Pin To Net: NetName=NetR8_1 Pin=U4-3
+Added Pin To Net: NetName=NetR8_1 Pin=U4-4
+Added Net: Name=NetR8_1
+Added Pin To Net: NetName=NTC_1_OUT Pin=C15-1
+Added Pin To Net: NetName=NTC_1_OUT Pin=R1-2
+Added Net: Name=NTC_1_OUT
+Added Pin To Net: NetName=NTC_2_OUT Pin=C18-1
+Added Pin To Net: NetName=NTC_2_OUT Pin=R3-2
+Added Net: Name=NTC_2_OUT
+Added Pin To Net: NetName=NTC_3_OUT Pin=C21-1
+Added Pin To Net: NetName=NTC_3_OUT Pin=R5-2
+Added Net: Name=NTC_3_OUT
+Added Member To Class: ClassName=Busbar Member=Component C13 CAP_POL_THT_22uF_100V
+Added Member To Class: ClassName=Busbar Member=Component C14 CAP_POL_THT_22uF_100V
+Added Member To Class: ClassName=Busbar Member=Component C15 0603
+Added Member To Class: ClassName=Busbar Member=Component C16 0603
+Added Member To Class: ClassName=Busbar Member=Component C17 0603
+Added Member To Class: ClassName=Busbar Member=Component C18 0603
+Added Member To Class: ClassName=Busbar Member=Component C19 0603
+Added Member To Class: ClassName=Busbar Member=Component C20 0603
+Added Member To Class: ClassName=Busbar Member=Component C21 0603
+Added Member To Class: ClassName=Busbar Member=Component C22 0603
+Added Member To Class: ClassName=Busbar Member=Component C23 0603
+Added Member To Class: ClassName=Busbar Member=Component C24 0603
+Add Class Member: Failed to add class member : Component C25 ESK226M100AE3AA
+Added Member To Class: ClassName=Busbar Member=Component J3 7466103
+Added Member To Class: ClassName=Busbar Member=Component J4 7466103
+Added Member To Class: ClassName=Busbar Member=Component J5 7466103
+Added Member To Class: ClassName=Busbar Member=Component J6 7466103
+Added Member To Class: ClassName=Busbar Member=Component J7 7466103
+Added Member To Class: ClassName=Busbar Member=Component J8 7466103
+Added Member To Class: ClassName=Busbar Member=Component J9 7466103
+Added Member To Class: ClassName=Busbar Member=Component J10 7466103
+Added Member To Class: ClassName=Busbar Member=Component J11 7466103
+Added Member To Class: ClassName=Busbar Member=Component J12 7466103
+Added Member To Class: ClassName=Busbar Member=Component J13 7466103
+Added Member To Class: ClassName=Busbar Member=Component J14 7466103
+Added Member To Class: ClassName=Busbar Member=Component R1 0603
+Added Member To Class: ClassName=Busbar Member=Component R2 0603
+Added Member To Class: ClassName=Busbar Member=Component R3 0603
+Added Member To Class: ClassName=Busbar Member=Component R4 0603
+Added Member To Class: ClassName=Busbar Member=Component R5 0603
+Added Member To Class: ClassName=Busbar Member=Component R6 0603
+Added Member To Class: ClassName=Busbar Member=Component R7 0603
+Added Member To Class: ClassName=Busbar Member=Component R8 0603
+Added Member To Class: ClassName=Busbar Member=Component R9 0603
+Added Member To Class: ClassName=Busbar Member=Component U1 LM321LVIDBVR
+Added Member To Class: ClassName=Busbar Member=Component U2 LM321LVIDBVR
+Added Member To Class: ClassName=Busbar Member=Component U3 LM321LVIDBVR
+Added Member To Class: ClassName=Busbar Member=Component U4 LM321LVIDBVR
+Added Rule: Name=Schematic Supply Nets_2

@@ -1,0 +1,6 @@
+Record=DiagramHierarchy|SourceDocument=72VBLDC.MbsDoc|Kind=Multi-board Schematic Module|Designator=Board 2|Source=..\BUSBAR\BUSBAR.PrjPcb
+Record=SubProject|SourceDocument=72VBLDC.MbsDoc|ProjectPath=..\BUSBAR\BUSBAR.PrjPcb
+Record=DiagramHierarchy|SourceDocument=72VBLDC.MbsDoc|Kind=Multi-board Schematic Module|Designator=Board 3|Source=..\CONTROLLER\CONTROLLER.PrjPcb
+Record=SubProject|SourceDocument=72VBLDC.MbsDoc|ProjectPath=..\CONTROLLER\CONTROLLER.PrjPcb
+Record=DiagramHierarchy|SourceDocument=72VBLDC.MbsDoc|Kind=Multi-board Schematic Module|Designator=Board 1|Source=..\MOSFETS\MOSFETS.PrjPcb
+Record=SubProject|SourceDocument=72VBLDC.MbsDoc|ProjectPath=..\MOSFETS\MOSFETS.PrjPcb

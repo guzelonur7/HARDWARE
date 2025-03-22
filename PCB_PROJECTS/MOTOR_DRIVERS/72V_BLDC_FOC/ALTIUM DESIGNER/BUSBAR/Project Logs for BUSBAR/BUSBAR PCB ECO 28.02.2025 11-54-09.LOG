@@ -1,0 +1,69 @@
+Added Component: Designator=J1(HEADER_FEMALE_SMD_2X3_1.27MM)
+Added Component: Designator=J6(HEADER_FEMALE_SMD_2X3_1.27MM)
+Added Component: Designator=J7(HEADER_FEMALE_SMD_2X3_1.27MM)
+Added Component: Designator=J16(HEADER_FEMALE_SMD_2X3_1.27MM)
+Added Component: Designator=J21(HEADER_FEMALE_SMD_2X3_1.27MM)
+Added Component: Designator=J22(HEADER_FEMALE_SMD_2X3_1.27MM)
+Added Component: Designator=J23(HEADER_FEMALE_SMD_2X3_1.27MM)
+Added Component: Designator=J25(HEADER_FEMALE_SMD_2X3_1.27MM)
+Added Component: Designator=J26(HEADER_FEMALE_SMD_2X3_1.27MM)
+Added Pin To Net: NetName=GND Pin=J1-2
+Added Pin To Net: NetName=GND Pin=J1-4
+Added Pin To Net: NetName=GND Pin=J1-6
+Added Pin To Net: NetName=+3V3 Pin=J6-1
+Added Pin To Net: NetName=I_PHASE_A Pin=J6-2
+Added Pin To Net: NetName=GND Pin=J6-3
+Added Pin To Net: NetName=I_PHASE_A Pin=J6-4
+Added Pin To Net: NetName=GND Pin=J6-5
+Added Pin To Net: NetName=I_PHASE_A Pin=J6-6
+Added Pin To Net: NetName=+3V3 Pin=J7-1
+Added Pin To Net: NetName=I_PHASE_B Pin=J7-2
+Added Pin To Net: NetName=GND Pin=J7-3
+Added Pin To Net: NetName=I_PHASE_B Pin=J7-4
+Added Pin To Net: NetName=GND Pin=J7-5
+Added Pin To Net: NetName=I_PHASE_B Pin=J7-6
+Added Pin To Net: NetName=+3V3 Pin=J16-1
+Added Pin To Net: NetName=I_PHASE_C Pin=J16-2
+Added Pin To Net: NetName=GND Pin=J16-3
+Added Pin To Net: NetName=I_PHASE_C Pin=J16-4
+Added Pin To Net: NetName=GND Pin=J16-5
+Added Pin To Net: NetName=I_PHASE_C Pin=J16-6
+Added Pin To Net: NetName=VS_A Pin=J21-1
+Added Pin To Net: NetName=GND Pin=J21-2
+Added Pin To Net: NetName=VS_A Pin=J21-3
+Added Pin To Net: NetName=GND Pin=J21-4
+Added Pin To Net: NetName=VS_A Pin=J21-5
+Added Pin To Net: NetName=GND Pin=J21-6
+Added Pin To Net: NetName=VS_B Pin=J22-1
+Added Pin To Net: NetName=GND Pin=J22-2
+Added Pin To Net: NetName=VS_B Pin=J22-3
+Added Pin To Net: NetName=GND Pin=J22-4
+Added Pin To Net: NetName=VS_B Pin=J22-5
+Added Pin To Net: NetName=GND Pin=J22-6
+Added Pin To Net: NetName=VS_C Pin=J23-1
+Added Pin To Net: NetName=GND Pin=J23-2
+Added Pin To Net: NetName=VS_C Pin=J23-3
+Added Pin To Net: NetName=GND Pin=J23-4
+Added Pin To Net: NetName=VS_C Pin=J23-5
+Added Pin To Net: NetName=GND Pin=J23-6
+Added Pin To Net: NetName=GHB Pin=J25-1
+Added Pin To Net: NetName=GND Pin=J25-2
+Added Pin To Net: NetName=GLB Pin=J25-3
+Added Pin To Net: NetName=GND Pin=J25-4
+Added Pin To Net: NetName=GND Pin=J25-5
+Added Pin To Net: NetName=GND Pin=J25-6
+Added Pin To Net: NetName=GHC Pin=J26-1
+Added Pin To Net: NetName=GND Pin=J26-2
+Added Pin To Net: NetName=GLC Pin=J26-3
+Added Pin To Net: NetName=GND Pin=J26-4
+Added Pin To Net: NetName=GND Pin=J26-5
+Added Pin To Net: NetName=GND Pin=J26-6
+Added Member To Class: ClassName=Busbar Member=Component J1 HEADER
+Added Member To Class: ClassName=Busbar Member=Component J6 HEADER
+Added Member To Class: ClassName=Busbar Member=Component J7 HEADER
+Added Member To Class: ClassName=Busbar Member=Component J16 HEADER
+Added Member To Class: ClassName=Busbar Member=Component J21 HEADER
+Added Member To Class: ClassName=Busbar Member=Component J22 HEADER
+Added Member To Class: ClassName=Busbar Member=Component J23 HEADER
+Added Member To Class: ClassName=Busbar Member=Component J25 HEADER
+Added Member To Class: ClassName=Busbar Member=Component J26 HEADER

@@ -1,0 +1,103 @@
+Change Component Designator: OldDesignator=J1 NewDesignator=J2
+Change Component Designator: OldDesignator=J2 NewDesignator=J5
+Change Component Designator: OldDesignator=J? NewDesignator=J8
+Change Component Designator: OldDesignator=J? NewDesignator=J9
+Change Component Designator: OldDesignator=J? NewDesignator=J10
+Change Component Designator: OldDesignator=J? NewDesignator=J11
+Change Component Designator: OldDesignator=J? NewDesignator=J12
+Change Component Designator: OldDesignator=J? NewDesignator=J13
+Change Component Designator: OldDesignator=J? NewDesignator=J14
+Change Component Designator: OldDesignator=J? NewDesignator=J15
+Change Component Designator: OldDesignator=J? NewDesignator=J17
+Change Component Designator: OldDesignator=J? NewDesignator=J18
+Change Component Designator: OldDesignator=J? NewDesignator=J19
+Change Component Designator: OldDesignator=J? NewDesignator=J20
+Added Component: Designator=J1(HEADER_MALE_SMD_2X2_2.54MM)
+Added Component: Designator=J3(HEADER_MALE_SMD_2X2_2.54MM)
+Added Component: Designator=J4(HEADER_MALE_SMD_2X2_2.54MM)
+Added Component: Designator=J6(HEADER_MALE_SMD_2X2_2.54MM)
+Added Component: Designator=J7(HEADER_MALE_SMD_2X2_2.54MM)
+Added Component: Designator=J16(HEADER_MALE_SMD_2X2_2.54MM)
+Added Component: Designator=J21(HEADER_MALE_SMD_2X2_2.54MM)
+Added Component: Designator=J22(HEADER_MALE_SMD_2X2_2.54MM)
+Added Component: Designator=J23(HEADER_MALE_SMD_2X2_2.54MM)
+Added Component: Designator=J24(HEADER_MALE_SMD_2X2_2.54MM)
+Added Component: Designator=J25(HEADER_MALE_SMD_2X2_2.54MM)
+Added Component: Designator=J26(HEADER_MALE_SMD_2X2_2.54MM)
+Added Pin To Net: NetName=GND Pin=J1-3
+Added Pin To Net: NetName=GND Pin=J1-4
+Added Pin To Net: NetName=GND Pin=J3-3
+Added Pin To Net: NetName=GND Pin=J3-4
+Added Pin To Net: NetName=GND Pin=J4-3
+Added Pin To Net: NetName=GND Pin=J4-4
+Added Pin To Net: NetName=+3V3 Pin=J6-1
+Added Pin To Net: NetName=GND Pin=J6-2
+Added Pin To Net: NetName=+3V3 Pin=J7-1
+Added Pin To Net: NetName=GND Pin=J7-2
+Added Pin To Net: NetName=+3V3 Pin=J16-1
+Added Pin To Net: NetName=GND Pin=J16-2
+Added Pin To Net: NetName=GND Pin=J21-3
+Added Pin To Net: NetName=GND Pin=J21-4
+Added Pin To Net: NetName=GND Pin=J22-3
+Added Pin To Net: NetName=GND Pin=J22-4
+Added Pin To Net: NetName=GND Pin=J23-3
+Added Pin To Net: NetName=GND Pin=J23-4
+Added Pin To Net: NetName=GND Pin=J24-3
+Added Pin To Net: NetName=GND Pin=J24-4
+Added Pin To Net: NetName=GND Pin=J25-3
+Added Pin To Net: NetName=GND Pin=J25-4
+Added Pin To Net: NetName=GND Pin=J26-3
+Added Pin To Net: NetName=GND Pin=J26-4
+Added Pin To Net: NetName=GHA Pin=J24-1
+Added Net: Name=GHA
+Added Pin To Net: NetName=GHB Pin=J25-1
+Added Net: Name=GHB
+Added Pin To Net: NetName=GHC Pin=J26-1
+Added Net: Name=GHC
+Added Pin To Net: NetName=GLA Pin=J24-2
+Added Net: Name=GLA
+Added Pin To Net: NetName=GLB Pin=J25-2
+Added Net: Name=GLB
+Added Pin To Net: NetName=GLC Pin=J26-2
+Added Net: Name=GLC
+Added Pin To Net: NetName=I_PHASE_A Pin=J6-3
+Added Pin To Net: NetName=I_PHASE_A Pin=J6-4
+Added Net: Name=I_PHASE_A
+Added Pin To Net: NetName=I_PHASE_B Pin=J7-3
+Added Pin To Net: NetName=I_PHASE_B Pin=J7-4
+Added Net: Name=I_PHASE_B
+Added Pin To Net: NetName=I_PHASE_C Pin=J16-3
+Added Pin To Net: NetName=I_PHASE_C Pin=J16-4
+Added Net: Name=I_PHASE_C
+Added Pin To Net: NetName=VS_A Pin=J21-1
+Added Pin To Net: NetName=VS_A Pin=J21-2
+Added Net: Name=VS_A
+Added Pin To Net: NetName=VS_B Pin=J22-1
+Added Pin To Net: NetName=VS_B Pin=J22-2
+Added Net: Name=VS_B
+Added Pin To Net: NetName=VS_C Pin=J23-1
+Added Pin To Net: NetName=VS_C Pin=J23-2
+Added Net: Name=VS_C
+Added Member To Class: ClassName=Busbar Member=Component J3 Header
+Added Member To Class: ClassName=Busbar Member=Component J4 Header
+Added Member To Class: ClassName=Busbar Member=Component J5 74651195R
+Added Member To Class: ClassName=Busbar Member=Component J6 Header
+Added Member To Class: ClassName=Busbar Member=Component J7 Header
+Added Member To Class: ClassName=Busbar Member=Component J8 7466103
+Added Member To Class: ClassName=Busbar Member=Component J9 7466103
+Added Member To Class: ClassName=Busbar Member=Component J10 7466103
+Added Member To Class: ClassName=Busbar Member=Component J12 7466103
+Added Member To Class: ClassName=Busbar Member=Component J13 7466103
+Added Member To Class: ClassName=Busbar Member=Component J14 7466103
+Added Member To Class: ClassName=Busbar Member=Component J15 7466103
+Added Member To Class: ClassName=Busbar Member=Component J16 Header
+Added Member To Class: ClassName=Busbar Member=Component J17 7466103
+Added Member To Class: ClassName=Busbar Member=Component J18 7466103
+Added Member To Class: ClassName=Busbar Member=Component J19 7466103
+Added Member To Class: ClassName=Busbar Member=Component J20 7466103
+Added Member To Class: ClassName=Busbar Member=Component J21 Header
+Added Member To Class: ClassName=Busbar Member=Component J22 Header
+Added Member To Class: ClassName=Busbar Member=Component J23 Header
+Added Member To Class: ClassName=Busbar Member=Component J24 Header
+Added Member To Class: ClassName=Busbar Member=Component J25 Header
+Added Member To Class: ClassName=Busbar Member=Component J26 Header

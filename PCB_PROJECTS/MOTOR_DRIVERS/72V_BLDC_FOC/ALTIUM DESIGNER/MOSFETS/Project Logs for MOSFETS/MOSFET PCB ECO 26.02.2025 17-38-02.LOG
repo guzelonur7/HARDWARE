@@ -1,0 +1,138 @@
+Removed Pin From Net: NetName=PHASE_B Pin=R21-1
+Removed Pin From Net: NetName=NetC22_1 Pin=R21-2
+Removed Pin From Net: NetName=PHASE_B Pin=R22-1
+Removed Pin From Net: NetName=NetC23_1 Pin=R22-2
+Removed Pin From Net: NetName=NetC24_1 Pin=R23-2
+Removed Pin From Net: NetName=NetC25_1 Pin=R24-2
+Removed Pin From Net: NetName=NetC26_1 Pin=R25-2
+Removed Pin From Net: NetName=SHUNT_B_P Pin=R26-1
+Removed Pin From Net: NetName=NetC22_2 Pin=R26-2
+Removed Pin From Net: NetName=GND Pin=R27-1
+Removed Pin From Net: NetName=NetC22_2 Pin=R27-2
+Removed Pin From Net: NetName=PHASE_C Pin=R35-1
+Removed Pin From Net: NetName=NetC32_1 Pin=R35-2
+Removed Pin From Net: NetName=PHASE_C Pin=R36-1
+Removed Pin From Net: NetName=NetC33_1 Pin=R36-2
+Removed Pin From Net: NetName=NetC34_1 Pin=R37-2
+Removed Pin From Net: NetName=NetC35_1 Pin=R38-2
+Removed Pin From Net: NetName=NetC36_1 Pin=R39-2
+Removed Pin From Net: NetName=SHUNT_C_P Pin=R40-1
+Removed Pin From Net: NetName=NetC32_2 Pin=R40-2
+Removed Pin From Net: NetName=GND Pin=R41-1
+Removed Pin From Net: NetName=NetC32_2 Pin=R41-2
+Change Component Footprint: Designator=R22 Old Footprint=R_0805 New Footprint=R_3921
+Change Component Footprint: Designator=R36 Old Footprint=R_0805 New Footprint=R_3921
+Change Component Footprint: Designator=R27 Old Footprint=R_3921 New Footprint=R_0805
+Change Component Footprint: Designator=R41 Old Footprint=R_3921 New Footprint=R_0805
+Change Component Comment : Designator=R22 Old Comment=0805 New Comment=WSLP3921L1000FEA
+Change Component Comment : Designator=R36 Old Comment=0805 New Comment=WSLP3921L1000FEA
+Change Component Comment : Designator=R27 Old Comment=WSLP3921L1000FEA New Comment=0805
+Change Component Comment : Designator=R41 Old Comment=WSLP3921L1000FEA New Comment=0805
+Change component parameters: Designator = "R21" ("R21"); Footprint = "R_0805"; UniqueID = "\CYBZCMHU" ("\CYBZCMHU")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "?"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Watt"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R22" ("R22"); Footprint = "R_0805"; UniqueID = "\ZLPPMIXS" ("\ZLPPMIXS")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Vishay-Dale/WSLP3921L1000FEA?qs=TiOZkKH1s2S5b3T%252BuIp%2FVQ%3D%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "%1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Watt"; Value = "9W"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R26" ("R26"); Footprint = "R_0805"; UniqueID = "\OIKPYPKD" ("\OIKPYPKD")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "?"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "Value"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Watt"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R27" ("R27"); Footprint = "R_3921"; UniqueID = "\MAFTBPIV" ("\MAFTBPIV")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "?"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "Value"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Watt"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R35" ("R35"); Footprint = "R_0805"; UniqueID = "\GNUEHARQ" ("\GNUEHARQ")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "?"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Watt"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R36" ("R36"); Footprint = "R_0805"; UniqueID = "\HFYGDRBJ" ("\HFYGDRBJ")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Vishay-Dale/WSLP3921L1000FEA?qs=TiOZkKH1s2S5b3T%252BuIp%2FVQ%3D%3D"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "%1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100u"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Watt"; Value = "9W"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R40" ("R40"); Footprint = "R_0805"; UniqueID = "\AEAWSING" ("\AEAWSING")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "?"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "Value"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Watt"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R41" ("R41"); Footprint = "R_3921"; UniqueID = "\VIJKLOWI" ("\VIJKLOWI")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "?"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "Value"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Watt"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=SHUNT_B_P Pin=R21-1
+Added Pin To Net: NetName=NetC22_2 Pin=R21-2
+Added Pin To Net: NetName=GND Pin=R22-1
+Added Pin To Net: NetName=NetC22_2 Pin=R22-2
+Added Pin To Net: NetName=NetC22_1 Pin=R23-2
+Added Pin To Net: NetName=NetC23_1 Pin=R24-2
+Added Pin To Net: NetName=NetC24_1 Pin=R25-2
+Added Pin To Net: NetName=PHASE_B Pin=R26-1
+Added Pin To Net: NetName=NetC25_1 Pin=R26-2
+Added Pin To Net: NetName=PHASE_B Pin=R27-1
+Added Pin To Net: NetName=NetC26_1 Pin=R27-2
+Added Pin To Net: NetName=SHUNT_C_P Pin=R35-1
+Added Pin To Net: NetName=NetC32_2 Pin=R35-2
+Added Pin To Net: NetName=GND Pin=R36-1
+Added Pin To Net: NetName=NetC32_2 Pin=R36-2
+Added Pin To Net: NetName=NetC32_1 Pin=R37-2
+Added Pin To Net: NetName=NetC33_1 Pin=R38-2
+Added Pin To Net: NetName=NetC34_1 Pin=R39-2
+Added Pin To Net: NetName=PHASE_C Pin=R40-1
+Added Pin To Net: NetName=NetC35_1 Pin=R40-2
+Added Pin To Net: NetName=PHASE_C Pin=R41-1
+Added Pin To Net: NetName=NetC36_1 Pin=R41-2
+Added Member To Class: ClassName=Mosfets Member=Component C17 0805
+Added Member To Class: ClassName=Mosfets Member=Component C18 0805
+Added Member To Class: ClassName=Mosfets Member=Component C24 0805
+Added Member To Class: ClassName=Mosfets Member=Component C25 0805
+Added Member To Class: ClassName=Mosfets Member=Component C27 0805
+Added Member To Class: ClassName=Mosfets Member=Component C28 0805
+Added Member To Class: ClassName=Mosfets Member=Component C29 0805
+Added Member To Class: ClassName=Mosfets Member=Component C30 0805
+Added Member To Class: ClassName=Mosfets Member=Component C31 0805
+Added Member To Class: ClassName=Mosfets Member=Component C32 0805
+Added Member To Class: ClassName=Mosfets Member=Component C33 0805
+Added Member To Class: ClassName=Mosfets Member=Component C34 0805
+Added Member To Class: ClassName=Mosfets Member=Component C35 0805
+Added Member To Class: ClassName=Mosfets Member=Component C36 0805
+Added Member To Class: ClassName=Mosfets Member=Component J4 7466103
+Added Member To Class: ClassName=Mosfets Member=Component J5 7466103
+Added Member To Class: ClassName=Mosfets Member=Component J6 7466103
+Added Member To Class: ClassName=Mosfets Member=Component J8 7466103
+Added Member To Class: ClassName=Mosfets Member=Component J9 7466103
+Added Member To Class: ClassName=Mosfets Member=Component J13 74651195R
+Added Member To Class: ClassName=Mosfets Member=Component J14 74651195R
+Added Member To Class: ClassName=Mosfets Member=Component R20 0805
+Added Member To Class: ClassName=Mosfets Member=Component R21 0805
+Added Member To Class: ClassName=Mosfets Member=Component R27 0805
+Added Member To Class: ClassName=Mosfets Member=Component R28 0805
+Added Member To Class: ClassName=Mosfets Member=Component R29 0805
+Added Member To Class: ClassName=Mosfets Member=Component R30 0805
+Added Member To Class: ClassName=Mosfets Member=Component R32 0805
+Added Member To Class: ClassName=Mosfets Member=Component R33 0805
+Added Member To Class: ClassName=Mosfets Member=Component R34 0805
+Added Member To Class: ClassName=Mosfets Member=Component R35 0805
+Added Member To Class: ClassName=Mosfets Member=Component R36 WSLP3921L1000FEA
+Added Member To Class: ClassName=Mosfets Member=Component R37 0805
+Added Member To Class: ClassName=Mosfets Member=Component R38 0805
+Added Member To Class: ClassName=Mosfets Member=Component R39 0805
+Added Member To Class: ClassName=Mosfets Member=Component R40 0805
+Added Member To Class: ClassName=Mosfets Member=Component R41 0805
+Added Member To Class: ClassName=Mosfets Member=Component R42 0805

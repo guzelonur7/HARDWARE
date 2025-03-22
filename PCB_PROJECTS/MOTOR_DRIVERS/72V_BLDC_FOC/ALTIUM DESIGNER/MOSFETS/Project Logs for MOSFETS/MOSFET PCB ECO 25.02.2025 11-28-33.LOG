@@ -1,0 +1,168 @@
+Removed Pin From Net: NetName=GND Pin=J8-1
+Removed Pin From Net: NetName=GND Pin=J8-1
+Removed Pin From Net: NetName=GND Pin=J8-1
+Removed Pin From Net: NetName=GND Pin=J8-1
+Removed Pin From Net: NetName=GND Pin=J8-1
+Removed Pin From Net: NetName=GND Pin=J8-1
+Removed Pin From Net: NetName=GND Pin=J8-1
+Change Component Designator: OldDesignator=J5 NewDesignator=J4
+Change Component Designator: OldDesignator=J6 NewDesignator=J5
+Added Component: Designator=J6(7466103)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466103?qs=IfoubJuuTRbG1djUcU3ZdQ%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=J7(7466103)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466103?qs=IfoubJuuTRbG1djUcU3ZdQ%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=J9(7466103)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466103?qs=IfoubJuuTRbG1djUcU3ZdQ%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=J10(7466103)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466103?qs=IfoubJuuTRbG1djUcU3ZdQ%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=J11(7466103)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466103?qs=IfoubJuuTRbG1djUcU3ZdQ%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=J12(7466103)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466103?qs=IfoubJuuTRbG1djUcU3ZdQ%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=J13(7466103)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466103?qs=IfoubJuuTRbG1djUcU3ZdQ%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=J14(7466103)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466103?qs=IfoubJuuTRbG1djUcU3ZdQ%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Component: Designator=J15(7466103)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466103?qs=IfoubJuuTRbG1djUcU3ZdQ%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "50A"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J6-1
+Added Pin To Net: NetName=GND Pin=J6-1
+Added Pin To Net: NetName=GND Pin=J6-1
+Added Pin To Net: NetName=GND Pin=J6-1
+Added Pin To Net: NetName=GND Pin=J6-1
+Added Pin To Net: NetName=GND Pin=J6-1
+Added Pin To Net: NetName=GND Pin=J6-1
+Added Pin To Net: NetName=PHASE_A Pin=J7-1
+Added Pin To Net: NetName=PHASE_A Pin=J7-1
+Added Pin To Net: NetName=PHASE_A Pin=J7-1
+Added Pin To Net: NetName=PHASE_A Pin=J7-1
+Added Pin To Net: NetName=PHASE_A Pin=J7-1
+Added Pin To Net: NetName=PHASE_A Pin=J7-1
+Added Pin To Net: NetName=PHASE_A Pin=J7-1
+Added Pin To Net: NetName=PHASE_A Pin=J8-1
+Added Pin To Net: NetName=PHASE_A Pin=J8-1
+Added Pin To Net: NetName=PHASE_A Pin=J8-1
+Added Pin To Net: NetName=PHASE_A Pin=J8-1
+Added Pin To Net: NetName=PHASE_A Pin=J8-1
+Added Pin To Net: NetName=PHASE_A Pin=J8-1
+Added Pin To Net: NetName=PHASE_A Pin=J8-1
+Added Pin To Net: NetName=PHASE_A Pin=J9-1
+Added Pin To Net: NetName=PHASE_A Pin=J9-1
+Added Pin To Net: NetName=PHASE_A Pin=J9-1
+Added Pin To Net: NetName=PHASE_A Pin=J9-1
+Added Pin To Net: NetName=PHASE_A Pin=J9-1
+Added Pin To Net: NetName=PHASE_A Pin=J9-1
+Added Pin To Net: NetName=PHASE_A Pin=J9-1
+Added Pin To Net: NetName=PHASE_B Pin=J10-1
+Added Pin To Net: NetName=PHASE_B Pin=J10-1
+Added Pin To Net: NetName=PHASE_B Pin=J10-1
+Added Pin To Net: NetName=PHASE_B Pin=J10-1
+Added Pin To Net: NetName=PHASE_B Pin=J10-1
+Added Pin To Net: NetName=PHASE_B Pin=J10-1
+Added Pin To Net: NetName=PHASE_B Pin=J10-1
+Added Pin To Net: NetName=PHASE_B Pin=J11-1
+Added Pin To Net: NetName=PHASE_B Pin=J11-1
+Added Pin To Net: NetName=PHASE_B Pin=J11-1
+Added Pin To Net: NetName=PHASE_B Pin=J11-1
+Added Pin To Net: NetName=PHASE_B Pin=J11-1
+Added Pin To Net: NetName=PHASE_B Pin=J11-1
+Added Pin To Net: NetName=PHASE_B Pin=J11-1
+Added Pin To Net: NetName=PHASE_B Pin=J12-1
+Added Pin To Net: NetName=PHASE_B Pin=J12-1
+Added Pin To Net: NetName=PHASE_B Pin=J12-1
+Added Pin To Net: NetName=PHASE_B Pin=J12-1
+Added Pin To Net: NetName=PHASE_B Pin=J12-1
+Added Pin To Net: NetName=PHASE_B Pin=J12-1
+Added Pin To Net: NetName=PHASE_B Pin=J12-1
+Added Pin To Net: NetName=PHASE_C Pin=J13-1
+Added Pin To Net: NetName=PHASE_C Pin=J13-1
+Added Pin To Net: NetName=PHASE_C Pin=J13-1
+Added Pin To Net: NetName=PHASE_C Pin=J13-1
+Added Pin To Net: NetName=PHASE_C Pin=J13-1
+Added Pin To Net: NetName=PHASE_C Pin=J13-1
+Added Pin To Net: NetName=PHASE_C Pin=J13-1
+Added Pin To Net: NetName=PHASE_C Pin=J14-1
+Added Pin To Net: NetName=PHASE_C Pin=J14-1
+Added Pin To Net: NetName=PHASE_C Pin=J14-1
+Added Pin To Net: NetName=PHASE_C Pin=J14-1
+Added Pin To Net: NetName=PHASE_C Pin=J14-1
+Added Pin To Net: NetName=PHASE_C Pin=J14-1
+Added Pin To Net: NetName=PHASE_C Pin=J14-1
+Added Pin To Net: NetName=PHASE_C Pin=J15-1
+Added Pin To Net: NetName=PHASE_C Pin=J15-1
+Added Pin To Net: NetName=PHASE_C Pin=J15-1
+Added Pin To Net: NetName=PHASE_C Pin=J15-1
+Added Pin To Net: NetName=PHASE_C Pin=J15-1
+Added Pin To Net: NetName=PHASE_C Pin=J15-1
+Added Pin To Net: NetName=PHASE_C Pin=J15-1
+Added Member To Class: ClassName=Mosfets Member=Component C2 0603
+Added Member To Class: ClassName=Mosfets Member=Component C3 0805
+Added Member To Class: ClassName=Mosfets Member=Component C4 0805
+Added Member To Class: ClassName=Mosfets Member=Component C5 0805
+Added Member To Class: ClassName=Mosfets Member=Component C6 0805
+Added Member To Class: ClassName=Mosfets Member=Component C7 0805
+Added Member To Class: ClassName=Mosfets Member=Component C10 0805
+Added Member To Class: ClassName=Mosfets Member=Component C11 0805
+Added Member To Class: ClassName=Mosfets Member=Component C12 0805
+Added Member To Class: ClassName=Mosfets Member=Component C13 0805
+Added Member To Class: ClassName=Mosfets Member=Component C14 0805
+Added Member To Class: ClassName=Mosfets Member=Component C19 0805
+Added Member To Class: ClassName=Mosfets Member=Component C21 0805
+Added Member To Class: ClassName=Mosfets Member=Component C23 0805
+Added Member To Class: ClassName=Mosfets Member=Component C25 0805
+Added Member To Class: ClassName=Mosfets Member=Component C27 0805
+Added Member To Class: ClassName=Mosfets Member=Component C29 0805
+Added Member To Class: ClassName=Mosfets Member=Component C37 0805
+Added Member To Class: ClassName=Mosfets Member=Component C39 0805
+Added Member To Class: ClassName=Mosfets Member=Component C41 0603
+Added Member To Class: ClassName=Mosfets Member=Component C43 0805
+Added Member To Class: ClassName=Mosfets Member=Component C45 0805
+Added Member To Class: ClassName=Mosfets Member=Component C47 0805
+Added Member To Class: ClassName=Mosfets Member=Component J6 7466103
+Added Member To Class: ClassName=Mosfets Member=Component J7 7466103
+Added Member To Class: ClassName=Mosfets Member=Component J9 7466103
+Added Member To Class: ClassName=Mosfets Member=Component J10 7466103
+Added Member To Class: ClassName=Mosfets Member=Component J11 7466103
+Added Member To Class: ClassName=Mosfets Member=Component J12 7466103
+Added Member To Class: ClassName=Mosfets Member=Component J13 7466103
+Added Member To Class: ClassName=Mosfets Member=Component J14 7466103
+Added Member To Class: ClassName=Mosfets Member=Component J15 7466103
+Added Member To Class: ClassName=Mosfets Member=Component R21 0603
+Added Member To Class: ClassName=Mosfets Member=Component R22 0805
+Added Member To Class: ClassName=Mosfets Member=Component R25 0805
+Added Member To Class: ClassName=Mosfets Member=Component R26 0805
+Added Member To Class: ClassName=Mosfets Member=Component R27 0805
+Added Member To Class: ClassName=Mosfets Member=Component R29 0805
+Added Member To Class: ClassName=Mosfets Member=Component R31 WSLP3921L1000FEA
+Added Member To Class: ClassName=Mosfets Member=Component R32 0805
+Added Member To Class: ClassName=Mosfets Member=Component R33 0603
+Added Member To Class: ClassName=Mosfets Member=Component R35 0805
+Added Member To Class: ClassName=Mosfets Member=Component R36 0805
+Added Member To Class: ClassName=Mosfets Member=Component R37 0805
+Added Member To Class: ClassName=Mosfets Member=Component R38 0805
+Added Member To Class: ClassName=Mosfets Member=Component R39 0805
+Added Member To Class: ClassName=Mosfets Member=Component R40 0805
+Added Member To Class: ClassName=Mosfets Member=Component R41 0603
+Added Member To Class: ClassName=Mosfets Member=Component R43 0805
+Added Member To Class: ClassName=Mosfets Member=Component R44 0805
+Added Member To Class: ClassName=Mosfets Member=Component R45 0805
+Added Member To Class: ClassName=Mosfets Member=Component R49 0805
+Added Member To Class: ClassName=Mosfets Member=Component R51 0805

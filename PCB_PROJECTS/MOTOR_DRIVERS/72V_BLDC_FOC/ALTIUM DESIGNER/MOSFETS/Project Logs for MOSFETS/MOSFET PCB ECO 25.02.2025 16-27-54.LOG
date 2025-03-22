@@ -1,0 +1,41 @@
+Added Component: Designator=J7(74651195R)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/74651195R?qs=lBTPRtX1sU%252BvmxiYHcgAuw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=J8(74651195R)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/74651195R?qs=lBTPRtX1sU%252BvmxiYHcgAuw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=J9(74651195R)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/74651195R?qs=lBTPRtX1sU%252BvmxiYHcgAuw%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=PHASE_A Pin=J7-1
+Added Pin To Net: NetName=PHASE_A Pin=J7-2
+Added Pin To Net: NetName=PHASE_A Pin=J7-3
+Added Pin To Net: NetName=PHASE_A Pin=J7-4
+Added Pin To Net: NetName=PHASE_A Pin=J7-5
+Added Pin To Net: NetName=PHASE_A Pin=J7-6
+Added Pin To Net: NetName=PHASE_A Pin=J7-7
+Added Pin To Net: NetName=PHASE_A Pin=J7-8
+Added Pin To Net: NetName=PHASE_A Pin=J7-9
+Added Pin To Net: NetName=PHASE_B Pin=J8-1
+Added Pin To Net: NetName=PHASE_B Pin=J8-2
+Added Pin To Net: NetName=PHASE_B Pin=J8-3
+Added Pin To Net: NetName=PHASE_B Pin=J8-4
+Added Pin To Net: NetName=PHASE_B Pin=J8-5
+Added Pin To Net: NetName=PHASE_B Pin=J8-6
+Added Pin To Net: NetName=PHASE_B Pin=J8-7
+Added Pin To Net: NetName=PHASE_B Pin=J8-8
+Added Pin To Net: NetName=PHASE_B Pin=J8-9
+Added Pin To Net: NetName=PHASE_C Pin=J9-1
+Added Pin To Net: NetName=PHASE_C Pin=J9-2
+Added Pin To Net: NetName=PHASE_C Pin=J9-3
+Added Pin To Net: NetName=PHASE_C Pin=J9-4
+Added Pin To Net: NetName=PHASE_C Pin=J9-5
+Added Pin To Net: NetName=PHASE_C Pin=J9-6
+Added Pin To Net: NetName=PHASE_C Pin=J9-7
+Added Pin To Net: NetName=PHASE_C Pin=J9-8
+Added Pin To Net: NetName=PHASE_C Pin=J9-9
+Added Member To Class: ClassName=Mosfets Member=Component J5 7466103
+Added Member To Class: ClassName=Mosfets Member=Component J6 7466103
+Added Member To Class: ClassName=Mosfets Member=Component J7 74651195R
+Added Member To Class: ClassName=Mosfets Member=Component J8 74651195R
+Added Member To Class: ClassName=Mosfets Member=Component J9 74651195R

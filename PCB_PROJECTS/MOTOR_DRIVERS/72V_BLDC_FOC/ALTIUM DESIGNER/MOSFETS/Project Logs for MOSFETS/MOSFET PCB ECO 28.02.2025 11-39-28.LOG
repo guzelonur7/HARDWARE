@@ -1,0 +1,8 @@
+Added Component: Designator=J24(HEADER_MALE_2X3_1.27MM)
+Added Pin To Net: NetName=VS_C Pin=J24-1
+Added Pin To Net: NetName=GND Pin=J24-2
+Added Pin To Net: NetName=VS_C Pin=J24-3
+Added Pin To Net: NetName=GND Pin=J24-4
+Added Pin To Net: NetName=VS_C Pin=J24-5
+Added Pin To Net: NetName=GND Pin=J24-6
+Added Member To Class: ClassName=Mosfets Member=Component J24 HEADER

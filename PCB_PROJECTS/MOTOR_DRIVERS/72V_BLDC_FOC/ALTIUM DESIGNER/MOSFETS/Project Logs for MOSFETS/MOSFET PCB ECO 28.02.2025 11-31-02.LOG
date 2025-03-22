@@ -1,0 +1,123 @@
+Removed Pin From Net: NetName=+3V3 Pin=J16-1
+Removed Pin From Net: NetName=I_PHASE_A Pin=J16-3
+Removed Pin From Net: NetName=I_PHASE_A Pin=J16-4
+Removed Pin From Net: NetName=+3V3 Pin=J17-1
+Removed Pin From Net: NetName=GND Pin=J17-2
+Removed Pin From Net: NetName=I_PHASE_B Pin=J17-3
+Removed Pin From Net: NetName=I_PHASE_B Pin=J17-4
+Removed Pin From Net: NetName=+3V3 Pin=J18-1
+Removed Pin From Net: NetName=GND Pin=J18-2
+Removed Pin From Net: NetName=I_PHASE_C Pin=J18-3
+Removed Pin From Net: NetName=I_PHASE_C Pin=J18-4
+Removed Pin From Net: NetName=NTC1+ Pin=J19-1
+Removed Pin From Net: NetName=NTC1- Pin=J19-2
+Removed Pin From Net: NetName=GND Pin=J19-3
+Removed Pin From Net: NetName=GND Pin=J19-4
+Removed Pin From Net: NetName=NTC2- Pin=J20-2
+Removed Pin From Net: NetName=GND Pin=J20-3
+Removed Pin From Net: NetName=NTC3- Pin=J21-2
+Removed Pin From Net: NetName=GND Pin=J21-3
+Removed Pin From Net: NetName=VS_A Pin=J22-2
+Removed Pin From Net: NetName=GND Pin=J22-3
+Removed Pin From Net: NetName=VS_B Pin=J23-2
+Removed Pin From Net: NetName=GND Pin=J23-3
+Removed Pin From Net: NetName=VS_C Pin=J24-2
+Removed Pin From Net: NetName=GND Pin=J24-3
+Removed Pin From Net: NetName=GLA Pin=J25-2
+Removed Pin From Net: NetName=GND Pin=J25-3
+Removed Pin From Net: NetName=GLB Pin=J26-2
+Removed Pin From Net: NetName=GND Pin=J26-3
+Removed Pin From Net: NetName=GLC Pin=J27-2
+Removed Pin From Net: NetName=GND Pin=J27-3
+Removed Member From Class: ClassName=Mosfets Member=J?
+Change Component Footprint: Designator=J16 Old Footprint=HEADER_MALE_SMD_2X2_2.54MM New Footprint=HEADER_MALE_2X3_1.27MM
+Change Component Footprint: Designator=J20 Old Footprint=HEADER_MALE_SMD_2X2_2.54MM New Footprint=HEADER_MALE_2X3_1.27MM
+Change Component Footprint: Designator=J21 Old Footprint=HEADER_MALE_SMD_2X2_2.54MM New Footprint=HEADER_MALE_2X3_1.27MM
+Change Component Footprint: Designator=J22 Old Footprint=HEADER_MALE_SMD_2X2_2.54MM New Footprint=HEADER_MALE_2X3_1.27MM
+Change Component Footprint: Designator=J23 Old Footprint=HEADER_MALE_SMD_2X2_2.54MM New Footprint=HEADER_MALE_2X3_1.27MM
+Change Component Footprint: Designator=J24 Old Footprint=HEADER_MALE_SMD_2X2_2.54MM New Footprint=HEADER_MALE_2X3_1.27MM
+Change Component Footprint: Designator=J25 Old Footprint=HEADER_MALE_SMD_2X2_2.54MM New Footprint=HEADER_MALE_2X3_1.27MM
+Change Component Footprint: Designator=J26 Old Footprint=HEADER_MALE_SMD_2X2_2.54MM New Footprint=HEADER_MALE_2X3_1.27MM
+Change Component Footprint: Designator=J27 Old Footprint=HEADER_MALE_SMD_2X2_2.54MM New Footprint=HEADER_MALE_2X3_1.27MM
+Change Component Designator: OldDesignator=J? NewDesignator=J2
+Change Component Designator: OldDesignator=J? NewDesignator=J3
+Change Component Designator: OldDesignator=J? NewDesignator=J4
+Change Component Designator: OldDesignator=J? NewDesignator=J6
+Change Component Designator: OldDesignator=J? NewDesignator=J7
+Change Component Designator: OldDesignator=J? NewDesignator=J8
+Change Component Designator: OldDesignator=J? NewDesignator=J10
+Change Component Designator: OldDesignator=J? NewDesignator=J11
+Change Component Designator: OldDesignator=J? NewDesignator=J12
+Change Component Designator: OldDesignator=J? NewDesignator=J17
+Change Component Designator: OldDesignator=J? NewDesignator=J18
+Change Component Designator: OldDesignator=J? NewDesignator=J19
+Added Component: Designator=J1(HEADER_MALE_2X3_1.27MM)
+Added Component: Designator=J5(HEADER_MALE_2X3_1.27MM)
+Added Component: Designator=J9(HEADER_MALE_2X3_1.27MM)
+Added Pin To Net: NetName=+3V3 Pin=J1-1
+Added Pin To Net: NetName=I_PHASE_A Pin=J1-2
+Added Pin To Net: NetName=GND Pin=J1-3
+Added Pin To Net: NetName=I_PHASE_A Pin=J1-4
+Added Pin To Net: NetName=GND Pin=J1-5
+Added Pin To Net: NetName=I_PHASE_A Pin=J1-6
+Added Pin To Net: NetName=+3V3 Pin=J5-1
+Added Pin To Net: NetName=I_PHASE_B Pin=J5-2
+Added Pin To Net: NetName=GND Pin=J5-3
+Added Pin To Net: NetName=I_PHASE_B Pin=J5-4
+Added Pin To Net: NetName=GND Pin=J5-5
+Added Pin To Net: NetName=I_PHASE_B Pin=J5-6
+Added Pin To Net: NetName=+3V3 Pin=J9-1
+Added Pin To Net: NetName=I_PHASE_C Pin=J9-2
+Added Pin To Net: NetName=GND Pin=J9-3
+Added Pin To Net: NetName=I_PHASE_C Pin=J9-4
+Added Pin To Net: NetName=GND Pin=J9-5
+Added Pin To Net: NetName=I_PHASE_C Pin=J9-6
+Added Pin To Net: NetName=NTC1+ Pin=J16-1
+Added Pin To Net: NetName=NTC1- Pin=J16-3
+Added Pin To Net: NetName=GND Pin=J16-4
+Added Pin To Net: NetName=GND Pin=J16-5
+Added Pin To Net: NetName=GND Pin=J16-6
+Added Pin To Net: NetName=GND Pin=J20-2
+Added Pin To Net: NetName=NTC2- Pin=J20-3
+Added Pin To Net: NetName=GND Pin=J20-5
+Added Pin To Net: NetName=GND Pin=J20-6
+Added Pin To Net: NetName=GND Pin=J21-2
+Added Pin To Net: NetName=NTC3- Pin=J21-3
+Added Pin To Net: NetName=GND Pin=J21-5
+Added Pin To Net: NetName=GND Pin=J21-6
+Added Pin To Net: NetName=GND Pin=J22-2
+Added Pin To Net: NetName=VS_A Pin=J22-3
+Added Pin To Net: NetName=VS_A Pin=J22-5
+Added Pin To Net: NetName=GND Pin=J22-6
+Added Pin To Net: NetName=GND Pin=J23-2
+Added Pin To Net: NetName=VS_B Pin=J23-3
+Added Pin To Net: NetName=VS_B Pin=J23-5
+Added Pin To Net: NetName=GND Pin=J23-6
+Added Pin To Net: NetName=GND Pin=J24-2
+Added Pin To Net: NetName=VS_C Pin=J24-3
+Added Pin To Net: NetName=VS_C Pin=J24-5
+Added Pin To Net: NetName=GND Pin=J24-6
+Added Pin To Net: NetName=GND Pin=J25-2
+Added Pin To Net: NetName=GLA Pin=J25-3
+Added Pin To Net: NetName=GND Pin=J25-5
+Added Pin To Net: NetName=GND Pin=J25-6
+Added Pin To Net: NetName=GND Pin=J26-2
+Added Pin To Net: NetName=GLB Pin=J26-3
+Added Pin To Net: NetName=GND Pin=J26-5
+Added Pin To Net: NetName=GND Pin=J26-6
+Added Pin To Net: NetName=GND Pin=J27-2
+Added Pin To Net: NetName=GLC Pin=J27-3
+Added Pin To Net: NetName=GND Pin=J27-5
+Added Pin To Net: NetName=GND Pin=J27-6
+Added Member To Class: ClassName=Mosfets Member=Component J1 HEADER
+Added Member To Class: ClassName=Mosfets Member=Component J2 7466103
+Added Member To Class: ClassName=Mosfets Member=Component J3 7466103
+Added Member To Class: ClassName=Mosfets Member=Component J4 7466103
+Added Member To Class: ClassName=Mosfets Member=Component J5 HEADER
+Added Member To Class: ClassName=Mosfets Member=Component J6 7466103
+Added Member To Class: ClassName=Mosfets Member=Component J7 7466103
+Added Member To Class: ClassName=Mosfets Member=Component J8 7466103
+Added Member To Class: ClassName=Mosfets Member=Component J9 HEADER
+Added Member To Class: ClassName=Mosfets Member=Component J10 7466103
+Added Member To Class: ClassName=Mosfets Member=Component J11 7466103
+Added Member To Class: ClassName=Mosfets Member=Component J12 7466103

@@ -1,0 +1,15 @@
+Change Component Footprint: Designator=J1 Old Footprint=HEADER_MALE_SMD_2X2_2.54MM New Footprint=HEADER_FEMALE_SMD_2X2_2.54MM
+Change Component Footprint: Designator=J3 Old Footprint=HEADER_MALE_SMD_2X2_2.54MM New Footprint=HEADER_FEMALE_SMD_2X2_2.54MM
+Change Component Footprint: Designator=J4 Old Footprint=HEADER_MALE_SMD_2X2_2.54MM New Footprint=HEADER_FEMALE_SMD_2X2_2.54MM
+Change Component Footprint: Designator=J6 Old Footprint=HEADER_MALE_SMD_2X2_2.54MM New Footprint=HEADER_FEMALE_SMD_2X2_2.54MM
+Change Component Footprint: Designator=J7 Old Footprint=HEADER_MALE_SMD_2X2_2.54MM New Footprint=HEADER_FEMALE_SMD_2X2_2.54MM
+Change Component Footprint: Designator=J16 Old Footprint=HEADER_MALE_SMD_2X2_2.54MM New Footprint=HEADER_FEMALE_SMD_2X2_2.54MM
+Change Component Footprint: Designator=J21 Old Footprint=HEADER_MALE_SMD_2X2_2.54MM New Footprint=HEADER_FEMALE_SMD_2X2_2.54MM
+Change Component Footprint: Designator=J22 Old Footprint=HEADER_MALE_SMD_2X2_2.54MM New Footprint=HEADER_FEMALE_SMD_2X2_2.54MM
+Change Component Footprint: Designator=J23 Old Footprint=HEADER_MALE_SMD_2X2_2.54MM New Footprint=HEADER_FEMALE_SMD_2X2_2.54MM
+Change Component Footprint: Designator=J24 Old Footprint=HEADER_MALE_SMD_2X2_2.54MM New Footprint=HEADER_FEMALE_SMD_2X2_2.54MM
+Change Component Footprint: Designator=J25 Old Footprint=HEADER_MALE_SMD_2X2_2.54MM New Footprint=HEADER_FEMALE_SMD_2X2_2.54MM
+Change Component Footprint: Designator=J26 Old Footprint=HEADER_MALE_SMD_2X2_2.54MM New Footprint=HEADER_FEMALE_SMD_2X2_2.54MM
+Added Member To Class: ClassName=Busbar Member=Component J1 Header
+Added Member To Class: ClassName=Busbar Member=Component J2 74651195R
+Added Member To Class: ClassName=Busbar Member=Component J11 7466103

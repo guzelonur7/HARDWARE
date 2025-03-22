@@ -1,0 +1,36 @@
+Added Component: Designator=J13(PAD_D10)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466205R?qs=lBTPRtX1sU8D2oI%252B7M8jdw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "70A"; VariantName = "[No Variations]"
+Added Component: Designator=J14(PAD_D10)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466205R?qs=lBTPRtX1sU8D2oI%252B7M8jdw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "70A"; VariantName = "[No Variations]"
+Added Component: Designator=J15(PAD_D10)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466205R?qs=lBTPRtX1sU8D2oI%252B7M8jdw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "70A"; VariantName = "[No Variations]"
+Added Component: Designator=J28(PAD_D10)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466205R?qs=lBTPRtX1sU8D2oI%252B7M8jdw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "70A"; VariantName = "[No Variations]"
+Added Component: Designator=J29(PAD_D10)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466205R?qs=lBTPRtX1sU8D2oI%252B7M8jdw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "70A"; VariantName = "[No Variations]"
+Added Component: Designator=J30(PAD_D10)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.mouser.com.tr/ProductDetail/Wurth-Elektronik/7466205R?qs=lBTPRtX1sU8D2oI%252B7M8jdw%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = "70A"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=PHASE_A Pin=J13-1
+Added Pin To Net: NetName=PHASE_A Pin=J14-1
+Added Pin To Net: NetName=PHASE_B Pin=J15-1
+Added Pin To Net: NetName=PHASE_B Pin=J28-1
+Added Pin To Net: NetName=PHASE_C Pin=J29-1
+Added Pin To Net: NetName=PHASE_C Pin=J30-1
+Added Member To Class: ClassName=Mosfets Member=Component J13 7466205R
+Added Member To Class: ClassName=Mosfets Member=Component J14 7466205R
+Added Member To Class: ClassName=Mosfets Member=Component J15 7466205R
+Added Member To Class: ClassName=Mosfets Member=Component J28 7466205R
+Added Member To Class: ClassName=Mosfets Member=Component J29 7466205R
+Added Member To Class: ClassName=Mosfets Member=Component J30 7466205R

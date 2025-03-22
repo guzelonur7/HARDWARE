@@ -1,0 +1,8 @@
+Added Component: Designator=J27(HEADER_MALE_2X3_1.27MM)
+Added Pin To Net: NetName=GHC Pin=J27-1
+Added Pin To Net: NetName=GND Pin=J27-2
+Added Pin To Net: NetName=GLC Pin=J27-3
+Added Pin To Net: NetName=GND Pin=J27-4
+Added Pin To Net: NetName=GND Pin=J27-5
+Added Pin To Net: NetName=GND Pin=J27-6
+Added Member To Class: ClassName=Mosfets Member=Component J27 HEADER

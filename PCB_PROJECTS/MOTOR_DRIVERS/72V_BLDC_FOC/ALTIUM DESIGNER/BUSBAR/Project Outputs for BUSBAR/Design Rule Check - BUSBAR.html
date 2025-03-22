@@ -1,0 +1,620 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD25\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">22.02.2025</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">23:32:43</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc" class="file"><acronym title="C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc">C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">96</td></tr>
+</table>
+</td>
+</table><a name="IDXL01UUPSQ3APDYKGNUUE5W4TPNJNUCQUYJCCBEF4SKSO5IRC35G"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDM15WWDGZDP2PEPTEPZBMCIMKCLD1G4PYT4IYQMNKUONIFRYJTQDM">Clearance Constraint (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDSUZ4CIJVWPXFFQYGOCQW2S2DNTI4IB04NTKVINVRZJVNRFTDI3J">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDH0UZUMH0O4OPIINXAQIYHZOHOP0VC0TZX1XARTMVIFYRM5SZJ04G">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">96</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDB0U000ZHXEORC0YAUV3OTZHY1OOFDMIBDX53RFNPZG4ONOGH4OZL">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID3D2KSEWNEQUOHQTADVRUFWV0A52EX5TVFO1BCT2MR2LMNP5O1M">Width Constraint (Min=0.254mm) (Max=0.254mm) (Preferred=0.254mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDCX2UXPOFY00JD4RKPKYDFC1X0MKCMXIIQW5AQ4LXFJ5EYOKMAZSP">Routing Topology Rule(Topology=Shortest) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDR3YIJAXUDDTCDDP4ZWNIKQ4J0GCF1V4ZFOKAEE3GMK2GKLZGHI">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2B3M3NQI3LC5FRHZ1O0RVLHBIMAQIYCJHKFIKFDBPNKLJZ15TEQE">Hole Size Constraint (Min=0.025mm) (Max=5mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDUH0B5HL3JYTMEF3Q2V50HQGUBL0BPNZPPAU0DXJOIK1DX4UINSUE">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDYWEL5O2RYCL3PV0DY2OYHW3VYB3DL42RMAZ0IYK3CNI3GAVLK30M">Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJLIQ2GJK4FWVMTHHQ5JPGFFBWNF0WYPBXHCW2SPUGGCJIIXXVBPK">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDPAN1EUPXCPAYLQELUFITMYPZTKDVDMFWODBK5WIBSPQRM4H4EQ2L">Silk to Silk (Clearance=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJ2AWLUFKQMHYFI3I5DMIBAQC5IJHBADIIHT14XGWTBBCFIQQA5RG">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDCDDBZLTWRY5VD40ELZCA0YIDVCZ4PCVGNNCPKWV4KJHGY4VN1UB">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">96</td>
+</tr>
+</table><br><a name="IDH0UZUMH0O4OPIINXAQIYHZOHOP0VC0TZX1XARTMVIFYRM5SZJ04G"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1147.102mil|Location2.X=1923.764mil|Location1.Y=989.622mil|Location2.Y=1096.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1147.102mil|Location2.X=1923.764mil|Location1.Y=989.622mil|Location2.Y=1096.992mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad C5-1(30mm,27mm) on Multi-Layer And Pad C10-1(48mm,26mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1855.764mil|Location2.X=1923.764mil|Location1.Y=989.622mil|Location2.Y=1687.543mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1855.764mil|Location2.X=1923.764mil|Location1.Y=989.622mil|Location2.Y=1687.543mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad C10-1(48mm,26mm) on Multi-Layer And Pad C9-1(48mm,42mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1343.953mil|Location2.X=2120.614mil|Location1.Y=989.622mil|Location2.Y=1096.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1343.953mil|Location2.X=2120.614mil|Location1.Y=989.622mil|Location2.Y=1096.992mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C5-2(35mm,27mm) on Multi-Layer And Pad C10-2(53mm,26mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2052.614mil|Location2.X=2120.614mil|Location1.Y=989.622mil|Location2.Y=1687.543mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2052.614mil|Location2.X=2120.614mil|Location1.Y=989.622mil|Location2.Y=1687.543mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C10-2(53mm,26mm) on Multi-Layer And Pad C9-2(53mm,42mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1147.102mil|Location2.X=1923.764mil|Location1.Y=3706.157mil|Location2.Y=3774.157mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1147.102mil|Location2.X=1923.764mil|Location1.Y=3706.157mil|Location2.Y=3774.157mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad C1-1(30mm,95mm) on Multi-Layer And Pad C6-1(48mm,95mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=528.283mil|Location2.X=1215.102mil|Location1.Y=3663.323mil|Location2.Y=3797.307mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=528.283mil|Location2.X=1215.102mil|Location1.Y=3663.323mil|Location2.Y=3797.307mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J1-3(15.12mm,94.75mm) on Multi-Layer And Pad C1-1(30mm,95mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2603.795mil|Location2.X=2671.795mil|Location1.Y=3076.236mil|Location2.Y=3813.528mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2603.795mil|Location2.X=2671.795mil|Location1.Y=3076.236mil|Location2.Y=3813.528mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad C12-1(67mm,79mm) on Multi-Layer And Pad C11-1(67mm,96mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2603.795mil|Location2.X=3380.457mil|Location1.Y=3745.528mil|Location2.Y=3813.528mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2603.795mil|Location2.X=3380.457mil|Location1.Y=3745.528mil|Location2.Y=3813.528mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad C11-1(67mm,96mm) on Multi-Layer And Pad C16-1(85mm,96mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2800.646mil|Location2.X=2868.646mil|Location1.Y=3076.236mil|Location2.Y=3813.528mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2800.646mil|Location2.X=2868.646mil|Location1.Y=3076.236mil|Location2.Y=3813.528mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C12-2(72mm,79mm) on Multi-Layer And Pad C11-2(72mm,96mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2800.646mil|Location2.X=3577.307mil|Location1.Y=3745.528mil|Location2.Y=3813.528mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2800.646mil|Location2.X=3577.307mil|Location1.Y=3745.528mil|Location2.Y=3813.528mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C11-2(72mm,96mm) on Multi-Layer And Pad C16-2(90mm,96mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1343.953mil|Location2.X=1411.953mil|Location1.Y=3036.866mil|Location2.Y=3774.157mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1343.953mil|Location2.X=1411.953mil|Location1.Y=3036.866mil|Location2.Y=3774.157mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C2-2(35mm,78mm) on Multi-Layer And Pad C1-2(35mm,95mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1343.953mil|Location2.X=2120.614mil|Location1.Y=3706.157mil|Location2.Y=3774.157mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1343.953mil|Location2.X=2120.614mil|Location1.Y=3706.157mil|Location2.Y=3774.157mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C1-2(35mm,95mm) on Multi-Layer And Pad C6-2(53mm,95mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=322.772mil|Location2.X=1411.953mil|Location1.Y=3706.157mil|Location2.Y=4401.638mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=322.772mil|Location2.X=1411.953mil|Location1.Y=3706.157mil|Location2.Y=4401.638mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad MH4-1(8.6mm,111.4mm) on Multi-Layer And Pad C1-2(35mm,95mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2603.795mil|Location2.X=2671.795mil|Location1.Y=1619.543mil|Location2.Y=2317.465mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2603.795mil|Location2.X=2671.795mil|Location1.Y=1619.543mil|Location2.Y=2317.465mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad C14-1(67mm,42mm) on Multi-Layer And Pad C13-1(67mm,58mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1855.764mil|Location2.X=2671.795mil|Location1.Y=2249.465mil|Location2.Y=2317.465mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1855.764mil|Location2.X=2671.795mil|Location1.Y=2249.465mil|Location2.Y=2317.465mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad C8-1(48mm,58mm) on Multi-Layer And Pad C13-1(67mm,58mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2800.646mil|Location2.X=2868.646mil|Location1.Y=1619.543mil|Location2.Y=2317.465mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2800.646mil|Location2.X=2868.646mil|Location1.Y=1619.543mil|Location2.Y=2317.465mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C14-2(72mm,42mm) on Multi-Layer And Pad C13-2(72mm,58mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2052.614mil|Location2.X=2868.646mil|Location1.Y=2249.465mil|Location2.Y=2317.465mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2052.614mil|Location2.X=2868.646mil|Location1.Y=2249.465mil|Location2.Y=2317.465mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C8-2(53mm,58mm) on Multi-Layer And Pad C13-2(72mm,58mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2603.795mil|Location2.X=2671.795mil|Location1.Y=1028.992mil|Location2.Y=1687.543mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2603.795mil|Location2.X=2671.795mil|Location1.Y=1028.992mil|Location2.Y=1687.543mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad C15-1(67mm,27mm) on Multi-Layer And Pad C14-1(67mm,42mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2603.795mil|Location2.X=3301.716mil|Location1.Y=1619.543mil|Location2.Y=1726.913mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2603.795mil|Location2.X=3301.716mil|Location1.Y=1619.543mil|Location2.Y=1726.913mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad C14-1(67mm,42mm) on Multi-Layer And Pad C19-1(83mm,43mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2800.646mil|Location2.X=2868.646mil|Location1.Y=1028.992mil|Location2.Y=1687.543mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2800.646mil|Location2.X=2868.646mil|Location1.Y=1028.992mil|Location2.Y=1687.543mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C15-2(72mm,27mm) on Multi-Layer And Pad C14-2(72mm,42mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2800.646mil|Location2.X=3498.567mil|Location1.Y=1619.543mil|Location2.Y=1726.913mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2800.646mil|Location2.X=3498.567mil|Location1.Y=1619.543mil|Location2.Y=1726.913mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C14-2(72mm,42mm) on Multi-Layer And Pad C19-2(88mm,43mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2603.795mil|Location2.X=3341.087mil|Location1.Y=989.622mil|Location2.Y=1096.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2603.795mil|Location2.X=3341.087mil|Location1.Y=989.622mil|Location2.Y=1096.992mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad C15-1(67mm,27mm) on Multi-Layer And Pad C20-1(84mm,26mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2800.646mil|Location2.X=3537.937mil|Location1.Y=989.622mil|Location2.Y=1096.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2800.646mil|Location2.X=3537.937mil|Location1.Y=989.622mil|Location2.Y=1096.992mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C15-2(72mm,27mm) on Multi-Layer And Pad C20-2(89mm,26mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3312.457mil|Location2.X=3380.457mil|Location1.Y=3036.866mil|Location2.Y=3813.528mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3312.457mil|Location2.X=3380.457mil|Location1.Y=3036.866mil|Location2.Y=3813.528mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad C17-1(85mm,78mm) on Multi-Layer And Pad C16-1(85mm,96mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3509.307mil|Location2.X=3577.307mil|Location1.Y=3036.866mil|Location2.Y=3813.528mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3509.307mil|Location2.X=3577.307mil|Location1.Y=3036.866mil|Location2.Y=3813.528mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C17-2(90mm,78mm) on Multi-Layer And Pad C16-2(90mm,96mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3509.307mil|Location2.X=3614.236mil|Location1.Y=3745.528mil|Location2.Y=4401.638mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3509.307mil|Location2.X=3614.236mil|Location1.Y=3745.528mil|Location2.Y=4401.638mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C16-2(90mm,96mm) on Multi-Layer And Pad MH3-1(91.4mm,111.4mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3273.087mil|Location2.X=3380.457mil|Location1.Y=2367.575mil|Location2.Y=3104.866mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3273.087mil|Location2.X=3380.457mil|Location1.Y=2367.575mil|Location2.Y=3104.866mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad C18-1(84mm,61mm) on Multi-Layer And Pad C17-1(85mm,78mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3469.937mil|Location2.X=3577.307mil|Location1.Y=2367.575mil|Location2.Y=3104.866mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3469.937mil|Location2.X=3577.307mil|Location1.Y=2367.575mil|Location2.Y=3104.866mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C18-2(89mm,61mm) on Multi-Layer And Pad C17-2(90mm,78mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3233.716mil|Location2.X=3341.087mil|Location1.Y=1658.913mil|Location2.Y=2435.575mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3233.716mil|Location2.X=3341.087mil|Location1.Y=1658.913mil|Location2.Y=2435.575mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad C19-1(83mm,43mm) on Multi-Layer And Pad C18-1(84mm,61mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3430.567mil|Location2.X=3537.937mil|Location1.Y=1658.913mil|Location2.Y=2435.575mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3430.567mil|Location2.X=3537.937mil|Location1.Y=1658.913mil|Location2.Y=2435.575mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C19-2(88mm,43mm) on Multi-Layer And Pad C18-2(89mm,61mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3469.937mil|Location2.X=3614.236mil|Location1.Y=322.772mil|Location2.Y=1057.622mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3469.937mil|Location2.X=3614.236mil|Location1.Y=322.772mil|Location2.Y=1057.622mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C20-2(89mm,26mm) on Multi-Layer And Pad MH2-1(91.4mm,8.6mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=518.443mil|Location2.X=1215.102mil|Location1.Y=3026.118mil|Location2.Y=3160.102mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=518.443mil|Location2.X=1215.102mil|Location1.Y=3026.118mil|Location2.Y=3160.102mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J2-3(14.87mm,78.565mm) on Multi-Layer And Pad C2-1(30mm,78mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1343.953mil|Location2.X=1411.953mil|Location1.Y=2328.205mil|Location2.Y=3104.866mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1343.953mil|Location2.X=1411.953mil|Location1.Y=2328.205mil|Location2.Y=3104.866mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C3-2(35mm,60mm) on Multi-Layer And Pad C2-2(35mm,78mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1147.102mil|Location2.X=1215.102mil|Location1.Y=1658.913mil|Location2.Y=2396.205mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1147.102mil|Location2.X=1215.102mil|Location1.Y=1658.913mil|Location2.Y=2396.205mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad C4-1(30mm,43mm) on Multi-Layer And Pad C3-1(30mm,60mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=518.443mil|Location2.X=1215.102mil|Location1.Y=2328.205mil|Location2.Y=2549.866mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=518.443mil|Location2.X=1215.102mil|Location1.Y=2328.205mil|Location2.Y=2549.866mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J3-3(14.87mm,63.065mm) on Multi-Layer And Pad C3-1(30mm,60mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1343.953mil|Location2.X=1411.953mil|Location1.Y=1658.913mil|Location2.Y=2396.205mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1343.953mil|Location2.X=1411.953mil|Location1.Y=1658.913mil|Location2.Y=2396.205mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C4-2(35mm,43mm) on Multi-Layer And Pad C3-2(35mm,60mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1147.102mil|Location2.X=1215.102mil|Location1.Y=1028.992mil|Location2.Y=1726.913mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1147.102mil|Location2.X=1215.102mil|Location1.Y=1028.992mil|Location2.Y=1726.913mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad C5-1(30mm,27mm) on Multi-Layer And Pad C4-1(30mm,43mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1343.953mil|Location2.X=1411.953mil|Location1.Y=1028.992mil|Location2.Y=1726.913mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1343.953mil|Location2.X=1411.953mil|Location1.Y=1028.992mil|Location2.Y=1726.913mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C5-2(35mm,27mm) on Multi-Layer And Pad C4-2(35mm,43mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.562mil|Location2.X=1411.953mil|Location1.Y=921.97mil|Location2.Y=1096.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.562mil|Location2.X=1411.953mil|Location1.Y=921.97mil|Location2.Y=1096.992mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J6-3(15mm,25.12mm) on Multi-Layer And Pad C5-2(35mm,27mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1855.764mil|Location2.X=1923.764mil|Location1.Y=3036.866mil|Location2.Y=3774.157mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1855.764mil|Location2.X=1923.764mil|Location1.Y=3036.866mil|Location2.Y=3774.157mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad C7-1(48mm,78mm) on Multi-Layer And Pad C6-1(48mm,95mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2052.614mil|Location2.X=2120.614mil|Location1.Y=3036.866mil|Location2.Y=3774.157mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2052.614mil|Location2.X=2120.614mil|Location1.Y=3036.866mil|Location2.Y=3774.157mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C7-2(53mm,78mm) on Multi-Layer And Pad C6-2(53mm,95mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1855.764mil|Location2.X=1923.764mil|Location1.Y=1619.543mil|Location2.Y=2317.465mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1855.764mil|Location2.X=1923.764mil|Location1.Y=1619.543mil|Location2.Y=2317.465mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad C9-1(48mm,42mm) on Multi-Layer And Pad C8-1(48mm,58mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2052.614mil|Location2.X=2120.614mil|Location1.Y=1619.543mil|Location2.Y=2317.465mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2052.614mil|Location2.X=2120.614mil|Location1.Y=1619.543mil|Location2.Y=2317.465mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C9-2(53mm,42mm) on Multi-Layer And Pad C8-2(53mm,58mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=179.071mil|Location2.X=487.661mil|Location1.Y=3663.323mil|Location2.Y=3797.307mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=179.071mil|Location2.X=487.661mil|Location1.Y=3663.323mil|Location2.Y=3797.307mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J1-1(6.25mm,94.75mm) on Multi-Layer And Pad J1-2(10.685mm,94.75mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=179.071mil|Location2.X=313.055mil|Location1.Y=3663.323mil|Location2.Y=3971.913mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=179.071mil|Location2.X=313.055mil|Location1.Y=3663.323mil|Location2.Y=3971.913mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J1-1(6.25mm,94.75mm) on Multi-Layer And Pad J1-4(6.25mm,99.185mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=169.231mil|Location2.X=313.055mil|Location1.Y=3375.331mil|Location2.Y=3797.307mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=169.231mil|Location2.X=313.055mil|Location1.Y=3375.331mil|Location2.Y=3797.307mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J2-7(6mm,87.435mm) on Multi-Layer And Pad J1-1(6.25mm,94.75mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=353.677mil|Location2.X=662.268mil|Location1.Y=3663.323mil|Location2.Y=3797.307mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=353.677mil|Location2.X=662.268mil|Location1.Y=3663.323mil|Location2.Y=3797.307mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J1-2(10.685mm,94.75mm) on Multi-Layer And Pad J1-3(15.12mm,94.75mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=179.071mil|Location2.X=487.661mil|Location1.Y=3837.929mil|Location2.Y=3971.913mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=179.071mil|Location2.X=487.661mil|Location1.Y=3837.929mil|Location2.Y=3971.913mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J1-4(6.25mm,99.185mm) on Multi-Layer And Pad J1-5(10.685mm,99.185mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=179.071mil|Location2.X=313.055mil|Location1.Y=3837.929mil|Location2.Y=4146.52mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=179.071mil|Location2.X=313.055mil|Location1.Y=3837.929mil|Location2.Y=4146.52mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J1-4(6.25mm,99.185mm) on Multi-Layer And Pad J1-7(6.25mm,103.62mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=528.283mil|Location2.X=662.268mil|Location1.Y=3837.929mil|Location2.Y=4146.52mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=528.283mil|Location2.X=662.268mil|Location1.Y=3837.929mil|Location2.Y=4146.52mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J1-6(15.12mm,99.185mm) on Multi-Layer And Pad J1-9(15.12mm,103.62mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=179.071mil|Location2.X=487.661mil|Location1.Y=4012.535mil|Location2.Y=4146.52mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=179.071mil|Location2.X=487.661mil|Location1.Y=4012.535mil|Location2.Y=4146.52mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J1-7(6.25mm,103.62mm) on Multi-Layer And Pad J1-8(10.685mm,103.62mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=353.677mil|Location2.X=662.268mil|Location1.Y=4012.535mil|Location2.Y=4146.52mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=353.677mil|Location2.X=662.268mil|Location1.Y=4012.535mil|Location2.Y=4146.52mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J1-8(10.685mm,103.62mm) on Multi-Layer And Pad J1-9(15.12mm,103.62mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=169.231mil|Location2.X=477.821mil|Location1.Y=3026.118mil|Location2.Y=3160.102mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=169.231mil|Location2.X=477.821mil|Location1.Y=3026.118mil|Location2.Y=3160.102mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J2-1(6mm,78.565mm) on Multi-Layer And Pad J2-2(10.435mm,78.565mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=169.231mil|Location2.X=303.215mil|Location1.Y=3026.118mil|Location2.Y=3334.709mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=169.231mil|Location2.X=303.215mil|Location1.Y=3026.118mil|Location2.Y=3334.709mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J2-1(6mm,78.565mm) on Multi-Layer And Pad J2-4(6mm,83mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=169.231mil|Location2.X=303.215mil|Location1.Y=2765.094mil|Location2.Y=3160.102mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=169.231mil|Location2.X=303.215mil|Location1.Y=2765.094mil|Location2.Y=3160.102mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J3-7(6mm,71.935mm) on Multi-Layer And Pad J2-1(6mm,78.565mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=343.837mil|Location2.X=652.428mil|Location1.Y=3026.118mil|Location2.Y=3160.102mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=343.837mil|Location2.X=652.428mil|Location1.Y=3026.118mil|Location2.Y=3160.102mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J2-2(10.435mm,78.565mm) on Multi-Layer And Pad J2-3(14.87mm,78.565mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=169.231mil|Location2.X=303.215mil|Location1.Y=3200.724mil|Location2.Y=3509.315mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=169.231mil|Location2.X=303.215mil|Location1.Y=3200.724mil|Location2.Y=3509.315mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J2-4(6mm,83mm) on Multi-Layer And Pad J2-7(6mm,87.435mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=343.837mil|Location2.X=652.428mil|Location1.Y=3200.724mil|Location2.Y=3334.709mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=343.837mil|Location2.X=652.428mil|Location1.Y=3200.724mil|Location2.Y=3334.709mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J2-5(10.435mm,83mm) on Multi-Layer And Pad J2-6(14.87mm,83mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=518.443mil|Location2.X=652.428mil|Location1.Y=3200.724mil|Location2.Y=3509.315mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=518.443mil|Location2.X=652.428mil|Location1.Y=3200.724mil|Location2.Y=3509.315mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J2-6(14.87mm,83mm) on Multi-Layer And Pad J2-9(14.87mm,87.435mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=169.231mil|Location2.X=477.821mil|Location1.Y=3375.331mil|Location2.Y=3509.315mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=169.231mil|Location2.X=477.821mil|Location1.Y=3375.331mil|Location2.Y=3509.315mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J2-7(6mm,87.435mm) on Multi-Layer And Pad J2-8(10.435mm,87.435mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=343.837mil|Location2.X=652.428mil|Location1.Y=3375.331mil|Location2.Y=3509.315mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=343.837mil|Location2.X=652.428mil|Location1.Y=3375.331mil|Location2.Y=3509.315mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J2-8(10.435mm,87.435mm) on Multi-Layer And Pad J2-9(14.87mm,87.435mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=169.231mil|Location2.X=477.821mil|Location1.Y=2415.882mil|Location2.Y=2549.866mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=169.231mil|Location2.X=477.821mil|Location1.Y=2415.882mil|Location2.Y=2549.866mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J3-1(6mm,63.065mm) on Multi-Layer And Pad J3-2(10.435mm,63.065mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=169.231mil|Location2.X=303.215mil|Location1.Y=2415.882mil|Location2.Y=2724.472mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=169.231mil|Location2.X=303.215mil|Location1.Y=2415.882mil|Location2.Y=2724.472mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J3-1(6mm,63.065mm) on Multi-Layer And Pad J3-4(6mm,67.5mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=343.837mil|Location2.X=652.428mil|Location1.Y=2415.882mil|Location2.Y=2549.866mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=343.837mil|Location2.X=652.428mil|Location1.Y=2415.882mil|Location2.Y=2549.866mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J3-2(10.435mm,63.065mm) on Multi-Layer And Pad J3-3(14.87mm,63.065mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=518.443mil|Location2.X=652.428mil|Location1.Y=2415.882mil|Location2.Y=2724.472mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=518.443mil|Location2.X=652.428mil|Location1.Y=2415.882mil|Location2.Y=2724.472mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J3-3(14.87mm,63.065mm) on Multi-Layer And Pad J3-6(14.87mm,67.5mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=169.231mil|Location2.X=303.215mil|Location1.Y=2590.488mil|Location2.Y=2899.079mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=169.231mil|Location2.X=303.215mil|Location1.Y=2590.488mil|Location2.Y=2899.079mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J3-4(6mm,67.5mm) on Multi-Layer And Pad J3-7(6mm,71.935mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=343.837mil|Location2.X=652.428mil|Location1.Y=2590.488mil|Location2.Y=2724.472mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=343.837mil|Location2.X=652.428mil|Location1.Y=2590.488mil|Location2.Y=2724.472mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J3-5(10.435mm,67.5mm) on Multi-Layer And Pad J3-6(14.87mm,67.5mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=169.231mil|Location2.X=477.821mil|Location1.Y=2765.094mil|Location2.Y=2899.079mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=169.231mil|Location2.X=477.821mil|Location1.Y=2765.094mil|Location2.Y=2899.079mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J3-7(6mm,71.935mm) on Multi-Layer And Pad J3-8(10.435mm,71.935mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=343.837mil|Location2.X=652.428mil|Location1.Y=2765.094mil|Location2.Y=2899.079mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=343.837mil|Location2.X=652.428mil|Location1.Y=2765.094mil|Location2.Y=2899.079mil|Absolute=True">Un-Routed Net Constraint: Net VIN Between Pad J3-8(10.435mm,71.935mm) on Multi-Layer And Pad J3-9(14.87mm,71.935mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=348.955mil|Location2.X=657.546mil|Location1.Y=1783.385mil|Location2.Y=1917.369mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=348.955mil|Location2.X=657.546mil|Location1.Y=1783.385mil|Location2.Y=1917.369mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J4-4(10.565mm,47mm) on Multi-Layer And Pad J4-1(15mm,47mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.562mil|Location2.X=657.546mil|Location1.Y=1522.362mil|Location2.Y=1917.369mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.562mil|Location2.X=657.546mil|Location1.Y=1522.362mil|Location2.Y=1917.369mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J5-3(15mm,40.37mm) on Multi-Layer And Pad J4-1(15mm,47mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.562mil|Location2.X=657.546mil|Location1.Y=1957.991mil|Location2.Y=2266.582mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.562mil|Location2.X=657.546mil|Location1.Y=1957.991mil|Location2.Y=2266.582mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J4-2(15mm,51.435mm) on Multi-Layer And Pad J4-3(15mm,55.87mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=348.955mil|Location2.X=657.546mil|Location1.Y=2132.597mil|Location2.Y=2266.582mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=348.955mil|Location2.X=657.546mil|Location1.Y=2132.597mil|Location2.Y=2266.582mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J4-6(10.565mm,55.87mm) on Multi-Layer And Pad J4-3(15mm,55.87mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=348.955mil|Location2.X=482.939mil|Location1.Y=1783.385mil|Location2.Y=2091.975mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=348.955mil|Location2.X=482.939mil|Location1.Y=1783.385mil|Location2.Y=2091.975mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J4-4(10.565mm,47mm) on Multi-Layer And Pad J4-5(10.565mm,51.435mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=174.349mil|Location2.X=482.939mil|Location1.Y=1783.385mil|Location2.Y=1917.369mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=174.349mil|Location2.X=482.939mil|Location1.Y=1783.385mil|Location2.Y=1917.369mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J4-7(6.13mm,47mm) on Multi-Layer And Pad J4-4(10.565mm,47mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=174.349mil|Location2.X=482.939mil|Location1.Y=2132.597mil|Location2.Y=2266.582mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=174.349mil|Location2.X=482.939mil|Location1.Y=2132.597mil|Location2.Y=2266.582mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J4-9(6.13mm,55.87mm) on Multi-Layer And Pad J4-6(10.565mm,55.87mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=174.349mil|Location2.X=308.333mil|Location1.Y=1783.385mil|Location2.Y=2091.975mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=174.349mil|Location2.X=308.333mil|Location1.Y=1783.385mil|Location2.Y=2091.975mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J4-7(6.13mm,47mm) on Multi-Layer And Pad J4-8(6.13mm,51.435mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=174.349mil|Location2.X=308.333mil|Location1.Y=1957.991mil|Location2.Y=2266.582mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=174.349mil|Location2.X=308.333mil|Location1.Y=1957.991mil|Location2.Y=2266.582mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J4-8(6.13mm,51.435mm) on Multi-Layer And Pad J4-9(6.13mm,55.87mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.562mil|Location2.X=657.546mil|Location1.Y=1173.15mil|Location2.Y=1481.74mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.562mil|Location2.X=657.546mil|Location1.Y=1173.15mil|Location2.Y=1481.74mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J5-1(15mm,31.5mm) on Multi-Layer And Pad J5-2(15mm,35.935mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=348.955mil|Location2.X=657.546mil|Location1.Y=1173.15mil|Location2.Y=1307.134mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=348.955mil|Location2.X=657.546mil|Location1.Y=1173.15mil|Location2.Y=1307.134mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J5-4(10.565mm,31.5mm) on Multi-Layer And Pad J5-1(15mm,31.5mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.562mil|Location2.X=657.546mil|Location1.Y=921.97mil|Location2.Y=1307.134mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.562mil|Location2.X=657.546mil|Location1.Y=921.97mil|Location2.Y=1307.134mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J6-3(15mm,25.12mm) on Multi-Layer And Pad J5-1(15mm,31.5mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.562mil|Location2.X=657.546mil|Location1.Y=1347.756mil|Location2.Y=1656.347mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.562mil|Location2.X=657.546mil|Location1.Y=1347.756mil|Location2.Y=1656.347mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J5-2(15mm,35.935mm) on Multi-Layer And Pad J5-3(15mm,40.37mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=348.955mil|Location2.X=482.939mil|Location1.Y=1173.15mil|Location2.Y=1481.74mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=348.955mil|Location2.X=482.939mil|Location1.Y=1173.15mil|Location2.Y=1481.74mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J5-4(10.565mm,31.5mm) on Multi-Layer And Pad J5-5(10.565mm,35.935mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=174.349mil|Location2.X=482.939mil|Location1.Y=1173.15mil|Location2.Y=1307.134mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=174.349mil|Location2.X=482.939mil|Location1.Y=1173.15mil|Location2.Y=1307.134mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J5-7(6.13mm,31.5mm) on Multi-Layer And Pad J5-4(10.565mm,31.5mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=174.349mil|Location2.X=482.939mil|Location1.Y=1522.362mil|Location2.Y=1656.347mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=174.349mil|Location2.X=482.939mil|Location1.Y=1522.362mil|Location2.Y=1656.347mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J5-9(6.13mm,40.37mm) on Multi-Layer And Pad J5-6(10.565mm,40.37mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=174.349mil|Location2.X=308.333mil|Location1.Y=1173.15mil|Location2.Y=1481.74mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=174.349mil|Location2.X=308.333mil|Location1.Y=1173.15mil|Location2.Y=1481.74mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J5-7(6.13mm,31.5mm) on Multi-Layer And Pad J5-8(6.13mm,35.935mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=174.349mil|Location2.X=308.333mil|Location1.Y=1347.756mil|Location2.Y=1656.347mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=174.349mil|Location2.X=308.333mil|Location1.Y=1347.756mil|Location2.Y=1656.347mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J5-8(6.13mm,35.935mm) on Multi-Layer And Pad J5-9(6.13mm,40.37mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.562mil|Location2.X=657.546mil|Location1.Y=572.757mil|Location2.Y=881.348mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.562mil|Location2.X=657.546mil|Location1.Y=572.757mil|Location2.Y=881.348mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J6-1(15mm,16.25mm) on Multi-Layer And Pad J6-2(15mm,20.685mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=348.955mil|Location2.X=657.546mil|Location1.Y=572.757mil|Location2.Y=706.741mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=348.955mil|Location2.X=657.546mil|Location1.Y=572.757mil|Location2.Y=706.741mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J6-4(10.565mm,16.25mm) on Multi-Layer And Pad J6-1(15mm,16.25mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.562mil|Location2.X=657.546mil|Location1.Y=747.364mil|Location2.Y=1055.954mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.562mil|Location2.X=657.546mil|Location1.Y=747.364mil|Location2.Y=1055.954mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J6-2(15mm,20.685mm) on Multi-Layer And Pad J6-3(15mm,25.12mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=348.955mil|Location2.X=657.546mil|Location1.Y=921.97mil|Location2.Y=1055.954mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=348.955mil|Location2.X=657.546mil|Location1.Y=921.97mil|Location2.Y=1055.954mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J6-6(10.565mm,25.12mm) on Multi-Layer And Pad J6-3(15mm,25.12mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=348.955mil|Location2.X=482.939mil|Location1.Y=572.757mil|Location2.Y=881.348mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=348.955mil|Location2.X=482.939mil|Location1.Y=572.757mil|Location2.Y=881.348mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J6-4(10.565mm,16.25mm) on Multi-Layer And Pad J6-5(10.565mm,20.685mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=174.349mil|Location2.X=482.939mil|Location1.Y=572.757mil|Location2.Y=706.741mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=174.349mil|Location2.X=482.939mil|Location1.Y=572.757mil|Location2.Y=706.741mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J6-7(6.13mm,16.25mm) on Multi-Layer And Pad J6-4(10.565mm,16.25mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=174.349mil|Location2.X=308.333mil|Location1.Y=572.757mil|Location2.Y=881.348mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=174.349mil|Location2.X=308.333mil|Location1.Y=572.757mil|Location2.Y=881.348mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J6-7(6.13mm,16.25mm) on Multi-Layer And Pad J6-8(6.13mm,20.685mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=174.349mil|Location2.X=308.333mil|Location1.Y=346.394mil|Location2.Y=706.741mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=174.349mil|Location2.X=308.333mil|Location1.Y=346.394mil|Location2.Y=706.741mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J6-7(6.13mm,16.25mm) on Multi-Layer And Pad MH1-1(7mm,9.2mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=174.349mil|Location2.X=308.333mil|Location1.Y=747.364mil|Location2.Y=1055.954mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Onur\Desktop\ONUR_GUZEL\HARDWARE\PCB_PROJECTS\MOTOR_DRIVERS\72V_BLDC_FOC\ALTIUM DESIGNER\BUSBAR\BUSBAR.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=174.349mil|Location2.X=308.333mil|Location1.Y=747.364mil|Location2.Y=1055.954mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad J6-8(6.13mm,20.685mm) on Multi-Layer And Pad J6-9(6.13mm,25.12mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

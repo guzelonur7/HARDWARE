@@ -1,0 +1,3366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\Onur\Desktop\digital_clock - Copy\digital_clock.kicad_sch</source>
+    <date>11/12/2024 21:12:06</date>
+    <tool>Eeschema (6.0.0)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Digital Clock Schematic</title>
+        <company>Company Name</company>
+        <rev>1.0</rev>
+        <date>2023-12-09</date>
+        <source>digital_clock.kicad_sch</source>
+        <comment number="1" value="."/>
+        <comment number="2" value="."/>
+        <comment number="3" value="."/>
+        <comment number="4" value="Drawn by Onur Güzel"/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>second_leds.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>hour_and_minute.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/Power/" tstamps="/e874b4f6-a944-4736-93f3-80be413ff93c/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>power.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>mcu.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/Decoder/" tstamps="/6de12867-f03e-4d5e-a748-336858b2e903/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>decoder.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>Clock_Connector</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="digital_clock.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f619261c-8054-415f-a3cc-e7d56e45137d</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>40f7fa9f-44ff-440d-bd24-8736e41a7c72</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>50bee876-e0d0-4436-9307-111dde170e91</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>5455b866-2c75-481d-aa55-83f617d95222</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>c3d3ec53-f256-4035-95dd-742adf87e3cd</tstamps>
+    </comp>
+    <comp ref="D5">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>69caf884-25c0-4784-8512-b5306544300c</tstamps>
+    </comp>
+    <comp ref="D6">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>ed78a5b2-119e-41d2-8fc3-55da9e7360ec</tstamps>
+    </comp>
+    <comp ref="D7">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>3cfe8ce3-2f30-4854-998a-44ad035b3ff1</tstamps>
+    </comp>
+    <comp ref="D8">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>b32f046e-d6fd-44b0-a3a2-f8b24fa1f2e1</tstamps>
+    </comp>
+    <comp ref="D9">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>f0dc5cf8-0ce1-4e24-98e6-d3b155806925</tstamps>
+    </comp>
+    <comp ref="D10">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>513d0847-8c82-4329-a678-4f625a571432</tstamps>
+    </comp>
+    <comp ref="D11">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>31dfa4d0-9a95-40f0-9bad-939db3b86fd7</tstamps>
+    </comp>
+    <comp ref="D12">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>8df2deab-bb4d-45b8-8c49-a1a63a77cd02</tstamps>
+    </comp>
+    <comp ref="D13">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>7a3205c5-768d-4157-acbe-deee6841968f</tstamps>
+    </comp>
+    <comp ref="D14">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>dc3d66d1-0277-465a-b182-1e76387f94df</tstamps>
+    </comp>
+    <comp ref="D15">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>e71a7151-5637-49b5-b7f6-09bfc73da6f6</tstamps>
+    </comp>
+    <comp ref="D16">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>f03a601c-7f7b-444c-9c28-7948d5201eca</tstamps>
+    </comp>
+    <comp ref="D17">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>9dc21662-6978-487d-9812-9c74591773f2</tstamps>
+    </comp>
+    <comp ref="D18">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>acd331d2-6268-43de-a2ad-7947aa44fceb</tstamps>
+    </comp>
+    <comp ref="D19">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>865a7ac6-b114-4151-8705-38058885f2e8</tstamps>
+    </comp>
+    <comp ref="D20">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>05430f33-8fec-4165-960d-21d1faac6afe</tstamps>
+    </comp>
+    <comp ref="D21">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>78a58ca0-218e-4b79-82fa-c5dbc4b0ee20</tstamps>
+    </comp>
+    <comp ref="D22">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>b1a1cc7b-ff4a-4f46-8380-748a38641b71</tstamps>
+    </comp>
+    <comp ref="D23">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>1ae91a22-b5e9-4336-9376-40d471b11b02</tstamps>
+    </comp>
+    <comp ref="D24">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>eab7528b-b337-42d5-8a1c-3245a734f11e</tstamps>
+    </comp>
+    <comp ref="D25">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>7af4b75b-1da8-41f3-b999-48586905476c</tstamps>
+    </comp>
+    <comp ref="D26">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>27bda8c5-a381-45aa-9850-bbf18581e6fc</tstamps>
+    </comp>
+    <comp ref="D27">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>5b9d3aa3-43bd-477b-9524-886c6ae03ee3</tstamps>
+    </comp>
+    <comp ref="D28">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>987f74bd-c548-4257-885c-b66f10d83191</tstamps>
+    </comp>
+    <comp ref="D29">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>f682fdb4-3bc8-4921-a2e7-5e5733940f3c</tstamps>
+    </comp>
+    <comp ref="D30">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>145730d0-f164-4210-b6de-1c35f9cf39fd</tstamps>
+    </comp>
+    <comp ref="D31">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>5011e695-9dfa-4a2c-a04a-c4cd3d46e077</tstamps>
+    </comp>
+    <comp ref="D32">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>65ed6447-deee-4c11-a887-b0de2bb5b0cf</tstamps>
+    </comp>
+    <comp ref="D33">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>7afce5aa-7037-407d-810d-49fee4520311</tstamps>
+    </comp>
+    <comp ref="D34">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>505e03af-7ac5-4212-9459-1948c847ccd7</tstamps>
+    </comp>
+    <comp ref="D35">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>a016ec74-8144-4659-9253-168bed7e3bce</tstamps>
+    </comp>
+    <comp ref="D36">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>cd533c8a-51ba-4ddb-b948-addeff01fd76</tstamps>
+    </comp>
+    <comp ref="D37">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>181af850-2081-4382-b688-308c090f76ef</tstamps>
+    </comp>
+    <comp ref="D38">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>497e4dfe-965a-4110-8e5a-247983f7f86a</tstamps>
+    </comp>
+    <comp ref="D39">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>6f14f3ee-9e8d-4323-b6be-67c61b490fa0</tstamps>
+    </comp>
+    <comp ref="D40">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>be462d19-cd5b-43e6-980a-c1464deedf98</tstamps>
+    </comp>
+    <comp ref="D41">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>424b739e-10df-4a2d-827d-0d13275a6017</tstamps>
+    </comp>
+    <comp ref="D42">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>5833c1ce-082c-428e-8a8e-5516abe8bfc5</tstamps>
+    </comp>
+    <comp ref="D43">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>a27d19bc-880c-4cd0-a07d-a2694a578bab</tstamps>
+    </comp>
+    <comp ref="D44">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>4f4fb2b7-b25c-44a8-abbd-b6c96ec77bfe</tstamps>
+    </comp>
+    <comp ref="D45">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>ebf3f4f1-bb71-4574-84d6-d280d5badb72</tstamps>
+    </comp>
+    <comp ref="D46">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>7fe434a0-89d0-472d-b0f1-c849ab6e7727</tstamps>
+    </comp>
+    <comp ref="D47">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>b53aed9c-ac89-4190-8345-ce364c8d3424</tstamps>
+    </comp>
+    <comp ref="D48">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>ebbe1969-95e5-4aba-afca-b04d9e7f5b63</tstamps>
+    </comp>
+    <comp ref="D49">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>9ec4378f-5a57-4e5e-8838-5050368a7da9</tstamps>
+    </comp>
+    <comp ref="D50">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>4a17a00f-8a82-4127-8f4d-fed70cf76692</tstamps>
+    </comp>
+    <comp ref="D51">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>b3341eeb-5c1b-45eb-9c85-3e7e3b33ca57</tstamps>
+    </comp>
+    <comp ref="D52">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>94a4647a-e362-4b6b-a034-c5cc31f958a1</tstamps>
+    </comp>
+    <comp ref="D53">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>64c0540b-b896-4528-bab7-8c6ac96eca8e</tstamps>
+    </comp>
+    <comp ref="D54">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>2cd2977c-671e-4844-ac34-b92fac279047</tstamps>
+    </comp>
+    <comp ref="D55">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>a23a9685-3f8f-43ac-86ab-eb7af4eec10b</tstamps>
+    </comp>
+    <comp ref="D56">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>82319307-6096-4f1d-ba56-ec119b0d01d4</tstamps>
+    </comp>
+    <comp ref="D57">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>cefe56ba-f601-407b-91b2-40ae57757000</tstamps>
+    </comp>
+    <comp ref="D58">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>e377bf7a-545b-4f22-9774-1838885b20d3</tstamps>
+    </comp>
+    <comp ref="D59">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>80c9a1cd-10b2-4d19-8cfc-45577f79aad9</tstamps>
+    </comp>
+    <comp ref="D60">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>2f1eb27a-5e3a-46bb-9405-f7e6128d9fbe</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>BC817</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/transistorler/discrete-transistorler/BC817-40-HT/417241</datasheet>
+      <libsource lib="Transistor_BJT" part="BC817" description="0.8A Ic, 45V Vce, NPN Transistor, SOT-23"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>d36bffd4-6532-449d-b9dd-515e0db337d8</tstamps>
+    </comp>
+    <comp ref="Q2">
+      <value>BC817</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/transistorler/discrete-transistorler/BC817-40-HT/417241</datasheet>
+      <libsource lib="Transistor_BJT" part="BC817" description="0.8A Ic, 45V Vce, NPN Transistor, SOT-23"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>fb3b7349-f4c2-43d9-870a-9c92e25c2572</tstamps>
+    </comp>
+    <comp ref="Q3">
+      <value>BC817</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/transistorler/discrete-transistorler/BC817-40-HT/417241</datasheet>
+      <libsource lib="Transistor_BJT" part="BC817" description="0.8A Ic, 45V Vce, NPN Transistor, SOT-23"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>b7e1e869-149d-48db-8c63-dcc26a6257d8</tstamps>
+    </comp>
+    <comp ref="Q4">
+      <value>BC817</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/transistorler/discrete-transistorler/BC817-40-HT/417241</datasheet>
+      <libsource lib="Transistor_BJT" part="BC817" description="0.8A Ic, 45V Vce, NPN Transistor, SOT-23"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>f85d63ad-3a81-4027-8742-3945dc9dc355</tstamps>
+    </comp>
+    <comp ref="Q5">
+      <value>BSS84</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/mosfetler/discrete-mosfetler/BSS84-HT/531196</datasheet>
+      <libsource lib="Transistor_FET" part="BSS84" description="-0.13A Id, -50V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>53e00886-dfd0-4873-a91e-bc002de2df08</tstamps>
+    </comp>
+    <comp ref="Q6">
+      <value>BSS84</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/mosfetler/discrete-mosfetler/BSS84-HT/531196</datasheet>
+      <libsource lib="Transistor_FET" part="BSS84" description="-0.13A Id, -50V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>179d9240-9ce1-4a1f-98ae-175f3a210f05</tstamps>
+    </comp>
+    <comp ref="Q7">
+      <value>BSS84</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/mosfetler/discrete-mosfetler/BSS84-HT/531196</datasheet>
+      <libsource lib="Transistor_FET" part="BSS84" description="-0.13A Id, -50V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>6246b059-26f8-44f5-8b26-c0ccc7b11274</tstamps>
+    </comp>
+    <comp ref="Q8">
+      <value>BSS84</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/mosfetler/discrete-mosfetler/BSS84-HT/531196</datasheet>
+      <libsource lib="Transistor_FET" part="BSS84" description="-0.13A Id, -50V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>702ced8d-ea7b-43e1-ae31-9c15e7ebf891</tstamps>
+    </comp>
+    <comp ref="Q9">
+      <value>BC817</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/transistorler/discrete-transistorler/BC817-40-HT/417241</datasheet>
+      <libsource lib="Transistor_BJT" part="BC817" description="0.8A Ic, 45V Vce, NPN Transistor, SOT-23"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>40aeb663-421c-45d8-aeef-0620f0730982</tstamps>
+    </comp>
+    <comp ref="Q10">
+      <value>BC817</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/transistorler/discrete-transistorler/BC817-40-HT/417241</datasheet>
+      <libsource lib="Transistor_BJT" part="BC817" description="0.8A Ic, 45V Vce, NPN Transistor, SOT-23"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>d9b5ecc4-f607-4294-8a11-70eb214fb37e</tstamps>
+    </comp>
+    <comp ref="Q11">
+      <value>BC817</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/transistorler/discrete-transistorler/BC817-40-HT/417241</datasheet>
+      <libsource lib="Transistor_BJT" part="BC817" description="0.8A Ic, 45V Vce, NPN Transistor, SOT-23"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>5d7b908a-d38a-4625-87c2-1f1bf400c834</tstamps>
+    </comp>
+    <comp ref="Q12">
+      <value>BC817</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/transistorler/discrete-transistorler/BC817-40-HT/417241</datasheet>
+      <libsource lib="Transistor_BJT" part="BC817" description="0.8A Ic, 45V Vce, NPN Transistor, SOT-23"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>c9743422-c1de-4167-9735-7979759b566c</tstamps>
+    </comp>
+    <comp ref="Q13">
+      <value>BSS84</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/mosfetler/discrete-mosfetler/BSS84-HT/531196</datasheet>
+      <libsource lib="Transistor_FET" part="BSS84" description="-0.13A Id, -50V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>84fe19e1-a1fc-4634-9489-c3364f21aa9e</tstamps>
+    </comp>
+    <comp ref="Q14">
+      <value>BSS84</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/mosfetler/discrete-mosfetler/BSS84-HT/531196</datasheet>
+      <libsource lib="Transistor_FET" part="BSS84" description="-0.13A Id, -50V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>c5060362-e62c-4b6c-be01-429b196c001b</tstamps>
+    </comp>
+    <comp ref="Q15">
+      <value>BSS84</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/mosfetler/discrete-mosfetler/BSS84-HT/531196</datasheet>
+      <libsource lib="Transistor_FET" part="BSS84" description="-0.13A Id, -50V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>2d82a3cd-bd1a-4283-b6d1-183d4a97368c</tstamps>
+    </comp>
+    <comp ref="Q16">
+      <value>BSS84</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/mosfetler/discrete-mosfetler/BSS84-HT/531196</datasheet>
+      <libsource lib="Transistor_FET" part="BSS84" description="-0.13A Id, -50V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>bfce72f3-854c-45d8-8b3c-d3b007093f60</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>470R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0471T5E/336231</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>37bd0e89-4668-462b-9e4b-01733396a9c2</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>470R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0471T5E/336231</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>30dad845-fa95-42ea-bade-407c19c0c176</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>470R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0471T5E/336231</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>e9fb2ba0-a028-4527-809b-857b1b1b4197</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>470R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0471T5E/336231</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>38872ae9-4de3-422e-a576-3fead9406bd7</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>47R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0470T5E/336224</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>309b9cbd-ea01-42ef-943e-4b942b3e9b0b</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>47R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0470T5E/336224</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>34b58b65-74af-4394-9a94-8e71acf6470a</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>47R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0470T5E/336224</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>80a698f8-35ff-4a5b-80b4-5cb263819ec5</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>47R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0470T5E/336224</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>c9fe1aa9-5801-499f-bead-e19dfc50ee51</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>120R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAJ0121T5E/534838</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>ce55d59f-8b86-4a6e-b68c-80570fcb48a3</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>120R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAJ0121T5E/534838</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>281aba1a-0b03-4d40-a288-a6790ab87b6c</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>120R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAJ0121T5E/534838</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>82ece332-c63f-4efe-a8ff-8c874060a3b4</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>120R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAJ0121T5E/534838</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>1e1208cc-cef4-47bb-862a-6537b11b95a6</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAF3300T5E/708471</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>043dc8f3-0f2a-4f01-9c86-849691cc4698</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAF3300T5E/708471</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>05609961-6b6f-4bbd-8960-41f5e4eba911</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAF3300T5E/708471</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>9d8741fc-a46a-49a6-96fa-a6879f19fa54</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAF3300T5E/708471</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>27c0a8e8-21d1-447b-9d4b-aef02ee2e27f</tstamps>
+    </comp>
+    <comp ref="R17">
+      <value>470R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0471T5E/336231</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>1d53ddcc-b4e2-4cf3-a8f0-95ac2314129c</tstamps>
+    </comp>
+    <comp ref="R18">
+      <value>470R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0471T5E/336231</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>f1105c98-a127-491c-a45a-93b65a78458d</tstamps>
+    </comp>
+    <comp ref="R19">
+      <value>470R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0471T5E/336231</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>f7c11fdf-4aa5-4c59-908c-70bb5791110a</tstamps>
+    </comp>
+    <comp ref="R20">
+      <value>470R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0471T5E/336231</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>19b23578-2c4c-4f3e-9b2e-a6b032a11cdb</tstamps>
+    </comp>
+    <comp ref="R21">
+      <value>47R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0470T5E/336224</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>1beeda17-a76f-42ea-89e4-1cbeafafc0ac</tstamps>
+    </comp>
+    <comp ref="R22">
+      <value>47R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0470T5E/336224</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>2d7d7639-9961-487a-af32-5eebbc3513b0</tstamps>
+    </comp>
+    <comp ref="R23">
+      <value>47R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0470T5E/336224</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>d2fb54db-b076-4da5-9a91-ed1f84eae7c8</tstamps>
+    </comp>
+    <comp ref="R24">
+      <value>47R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0470T5E/336224</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>b87cbe0f-3e3a-467e-bd0e-6c0354b25c25</tstamps>
+    </comp>
+    <comp ref="R25">
+      <value>120R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAJ0121T5E/534838</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>455d70d7-7c14-4241-9215-ecfd24e71b98</tstamps>
+    </comp>
+    <comp ref="R26">
+      <value>120R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAJ0121T5E/534838</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>b3717b8e-b9c9-4f40-b1af-6543dcaaa618</tstamps>
+    </comp>
+    <comp ref="R27">
+      <value>120R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAJ0121T5E/534838</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>10fa5cc1-ec0b-4d19-b79d-11a9d369b058</tstamps>
+    </comp>
+    <comp ref="R28">
+      <value>120R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAJ0121T5E/534838</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>b516bbf4-25dd-454f-b2ce-506023ad544d</tstamps>
+    </comp>
+    <comp ref="R29">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAF3300T5E/708471</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>a4857f83-9019-47d7-8950-2bdf79025f29</tstamps>
+    </comp>
+    <comp ref="R30">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAF3300T5E/708471</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>4c14f5d5-f8a1-4f5a-9ff9-9095f9a33750</tstamps>
+    </comp>
+    <comp ref="R31">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAF3300T5E/708471</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>96f87400-5788-4e73-ac46-19aaf65d4918</tstamps>
+    </comp>
+    <comp ref="R32">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAF3300T5E/708471</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Second"/>
+      <property name="Sheetfile" value="second_leds.kicad_sch"/>
+      <sheetpath names="/Second/" tstamps="/5787e63c-16ef-4ca0-a56b-438e59acf80e/"/>
+      <tstamps>282cadfb-c5ff-4c4c-8290-5f1bbbd2b7c8</tstamps>
+    </comp>
+    <comp ref="D61">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>066e5e50-cf2e-40ef-bd32-737038a68b39</tstamps>
+    </comp>
+    <comp ref="D62">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>a27e04a8-94e3-40f8-b5fc-b53178f614c5</tstamps>
+    </comp>
+    <comp ref="D63">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>5224cea2-2883-45dc-8750-7ac65bf91f34</tstamps>
+    </comp>
+    <comp ref="D64">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>94cb0528-549f-4869-98be-4746586f95ed</tstamps>
+    </comp>
+    <comp ref="D65">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>acf87a60-03d7-48cf-be16-6338802aed46</tstamps>
+    </comp>
+    <comp ref="D66">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>dfe4a8f6-2c6c-4716-b959-09a7f8db5f8d</tstamps>
+    </comp>
+    <comp ref="D67">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>6fe5e517-4d92-4943-b623-b7bec4802c69</tstamps>
+    </comp>
+    <comp ref="D68">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>ccec16ec-1e4c-400a-88d1-94256d514f02</tstamps>
+    </comp>
+    <comp ref="D69">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>ddc3cd1d-56bf-41a7-94d6-59314b2642e5</tstamps>
+    </comp>
+    <comp ref="D70">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>e656d191-24f5-4f89-a049-19fdef9f5e51</tstamps>
+    </comp>
+    <comp ref="D71">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>83b53387-722a-4a65-a5b2-32bda23f1874</tstamps>
+    </comp>
+    <comp ref="D72">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>f3abe9f3-2f86-4bd7-8df7-69b0cb2ba4e7</tstamps>
+    </comp>
+    <comp ref="D73">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>e3f8c7ac-1721-4b9d-8c34-6588b4772a8e</tstamps>
+    </comp>
+    <comp ref="D74">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>da3c0bd2-03d7-4a1e-bf46-3786b0d08f68</tstamps>
+    </comp>
+    <comp ref="D75">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>b10ca95b-403a-4cd4-97dc-e108bc66aa46</tstamps>
+    </comp>
+    <comp ref="D76">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>f91107b3-94dc-4ca8-a674-a80d5170dd6c</tstamps>
+    </comp>
+    <comp ref="D77">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>9f60829d-7092-48c4-9b75-c6540c79f557</tstamps>
+    </comp>
+    <comp ref="D78">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>e4577d46-d3c3-42d0-a608-18a45d00b5c9</tstamps>
+    </comp>
+    <comp ref="D79">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>9f47fb9b-3eb6-43cb-850a-38045aa2fcef</tstamps>
+    </comp>
+    <comp ref="D80">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>5e20c5de-ecb0-4645-9c99-3ff45db0685c</tstamps>
+    </comp>
+    <comp ref="D81">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>9a9ce4d9-9d09-4984-b80e-7025c3f4d9e1</tstamps>
+    </comp>
+    <comp ref="D82">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>69264ac6-7d40-4871-8dfd-1a583cc3974c</tstamps>
+    </comp>
+    <comp ref="D83">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>402a8d33-ac47-44ff-a7db-4d19c5be54de</tstamps>
+    </comp>
+    <comp ref="D84">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>f3e585de-c99c-4bcb-86ea-7f619a693fc8</tstamps>
+    </comp>
+    <comp ref="D85">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>65ca8d9f-dc52-4830-bcb2-6e56e0bcc901</tstamps>
+    </comp>
+    <comp ref="D86">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>bad40aaf-5f3d-4b46-93dc-3cf0e1ea6013</tstamps>
+    </comp>
+    <comp ref="D87">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>134adf12-5b09-44a6-8304-9966b436447d</tstamps>
+    </comp>
+    <comp ref="D88">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>b1d019d3-2fe1-4b7a-bac8-258329c683b5</tstamps>
+    </comp>
+    <comp ref="D89">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>1a3d8878-4ece-4b7f-a6fa-778f0f8afa89</tstamps>
+    </comp>
+    <comp ref="D90">
+      <value>WHITE</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/led-ve-aydinlatma-cozumleri/led-komponentler/sinyal-ledler-beyaz/HL-PST-1608H233W-HF4/513250</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>f4513390-3e03-495d-86cb-fd3c9398b380</tstamps>
+    </comp>
+    <comp ref="Q17">
+      <value>BC817</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/transistorler/discrete-transistorler/BC817-40-HT/417241</datasheet>
+      <libsource lib="Transistor_BJT" part="BC817" description="0.8A Ic, 45V Vce, NPN Transistor, SOT-23"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>15a25b0e-6a5a-4da6-91d7-d2a1ff1d7ed1</tstamps>
+    </comp>
+    <comp ref="Q18">
+      <value>BC817</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/transistorler/discrete-transistorler/BC817-40-HT/417241</datasheet>
+      <libsource lib="Transistor_BJT" part="BC817" description="0.8A Ic, 45V Vce, NPN Transistor, SOT-23"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>c7f04172-c5e1-4e66-889a-4b69937ac22b</tstamps>
+    </comp>
+    <comp ref="Q19">
+      <value>BSS84</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/mosfetler/discrete-mosfetler/BSS84-HT/531196</datasheet>
+      <libsource lib="Transistor_FET" part="BSS84" description="-0.13A Id, -50V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>b55b0fe9-0860-4bbe-b49c-5b3c50736b62</tstamps>
+    </comp>
+    <comp ref="Q20">
+      <value>BSS84</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/mosfetler/discrete-mosfetler/BSS84-HT/531196</datasheet>
+      <libsource lib="Transistor_FET" part="BSS84" description="-0.13A Id, -50V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>3d064998-eb06-4681-b04b-cd6f4556b6cb</tstamps>
+    </comp>
+    <comp ref="Q21">
+      <value>BC817</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/transistorler/discrete-transistorler/BC817-40-HT/417241</datasheet>
+      <libsource lib="Transistor_BJT" part="BC817" description="0.8A Ic, 45V Vce, NPN Transistor, SOT-23"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>5b1f6fb7-d85f-4a62-9e40-549ddf5ad7dc</tstamps>
+    </comp>
+    <comp ref="Q22">
+      <value>BC817</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/transistorler/discrete-transistorler/BC817-40-HT/417241</datasheet>
+      <libsource lib="Transistor_BJT" part="BC817" description="0.8A Ic, 45V Vce, NPN Transistor, SOT-23"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>8bcae98f-6237-4234-9756-c3c5af0f5cd7</tstamps>
+    </comp>
+    <comp ref="Q23">
+      <value>BSS84</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/mosfetler/discrete-mosfetler/BSS84-HT/531196</datasheet>
+      <libsource lib="Transistor_FET" part="BSS84" description="-0.13A Id, -50V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>aaf82df3-c5e0-452e-aea1-d1628a3214db</tstamps>
+    </comp>
+    <comp ref="Q24">
+      <value>BSS84</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/mosfetler/discrete-mosfetler/BSS84-HT/531196</datasheet>
+      <libsource lib="Transistor_FET" part="BSS84" description="-0.13A Id, -50V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>7766bb50-b96d-4d2d-92ac-26cf542fc390</tstamps>
+    </comp>
+    <comp ref="R33">
+      <value>470R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0471T5E/336231</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>3f481464-d6c4-428e-b45d-2ceffb30b0ae</tstamps>
+    </comp>
+    <comp ref="R34">
+      <value>470R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0471T5E/336231</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>9289c55b-7788-4756-839b-9be58a799ac5</tstamps>
+    </comp>
+    <comp ref="R35">
+      <value>47R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0470T5E/336224</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>19b44668-d8a0-43f2-909e-3c3b2d618b6c</tstamps>
+    </comp>
+    <comp ref="R36">
+      <value>47R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0470T5E/336224</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>a9dfb1f8-73ec-4ca9-8342-9e6d75649ab5</tstamps>
+    </comp>
+    <comp ref="R37">
+      <value>120R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAJ0121T5E/534838</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>25fb8815-a6b8-4118-a07f-c26f89417177</tstamps>
+    </comp>
+    <comp ref="R38">
+      <value>120R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAJ0121T5E/534838</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>3fa70d15-83ae-466f-832c-a4ab2ab7fcdb</tstamps>
+    </comp>
+    <comp ref="R39">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAF3300T5E/708471</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>4638bc10-9546-48bb-8e98-a25b750317d5</tstamps>
+    </comp>
+    <comp ref="R40">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAF3300T5E/708471</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>9c1d93ad-8304-44f0-b72e-0ce5ccac9643</tstamps>
+    </comp>
+    <comp ref="R41">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAF3300T5E/708471</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>6ab4e789-4431-484d-a30b-52e5597d4aaf</tstamps>
+    </comp>
+    <comp ref="R42">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAF3300T5E/708471</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>d4b72f00-44b9-4303-8e9a-dd546040cff7</tstamps>
+    </comp>
+    <comp ref="R43">
+      <value>470R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0471T5E/336231</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>9b94776b-28b7-4820-a1ca-a12e70c8bb68</tstamps>
+    </comp>
+    <comp ref="R44">
+      <value>470R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0471T5E/336231</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>09aeedc2-3bde-4ca5-95de-8587b48c05f5</tstamps>
+    </comp>
+    <comp ref="R45">
+      <value>47R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0470T5E/336224</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>fb131dac-7c72-4c2f-92fe-1faf6c92a6a2</tstamps>
+    </comp>
+    <comp ref="R46">
+      <value>47R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0470T5E/336224</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>3f94ff47-2704-49a3-a0e9-905f51622b18</tstamps>
+    </comp>
+    <comp ref="R47">
+      <value>120R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAJ0121T5E/534838</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>370cf193-21e8-476d-a013-ed4b77257f53</tstamps>
+    </comp>
+    <comp ref="R48">
+      <value>120R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAJ0121T5E/534838</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>6a57d6b9-6582-4af2-8b59-601509ea5807</tstamps>
+    </comp>
+    <comp ref="R49">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAF3300T5E/708471</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>30c34723-4b14-487d-bdad-d039f559a3ce</tstamps>
+    </comp>
+    <comp ref="R50">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603WAF3300T5E/708471</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="Hour and Minute"/>
+      <property name="Sheetfile" value="hour_and_minute.kicad_sch"/>
+      <sheetpath names="/Hour and Minute/" tstamps="/befd94ad-eee7-43fe-a2f7-b27633a3a3c5/"/>
+      <tstamps>ec9f9658-bcff-4360-8fa3-4a62b4648a92</tstamps>
+    </comp>
+    <comp ref="C1">
+      <value>47uF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/kapasitorler/smt-smd-ve-mlcc-kapasitorler/CL31A476MQHNNNE/518067</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/e874b4f6-a944-4736-93f3-80be413ff93c/"/>
+      <tstamps>cc122808-f150-4cf9-90dc-e28cc227db6a</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>47uF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/kapasitorler/smt-smd-ve-mlcc-kapasitorler/CL31A476MQHNNNE/518067</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/e874b4f6-a944-4736-93f3-80be413ff93c/"/>
+      <tstamps>08ad037b-8544-4817-9084-9fe9297ce5a3</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>10uF</value>
+      <footprint>Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/kapasitorler/tantal-kapasitorler/TAJA106K010RNJ/465460</datasheet>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/e874b4f6-a944-4736-93f3-80be413ff93c/"/>
+      <tstamps>ea2a65fc-b3bf-45a6-a363-c870b030b178</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/kapasitorler/smt-smd-ve-mlcc-kapasitorler/CL10B104KO8NNNC/342155</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/e874b4f6-a944-4736-93f3-80be413ff93c/"/>
+      <tstamps>dc8a5ca7-b6e6-408c-8f98-c8bb2eebc467</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>47uF</value>
+      <footprint>Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/kapasitorler/tantal-kapasitorler/TAJA476K006RNJ/433440</datasheet>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/e874b4f6-a944-4736-93f3-80be413ff93c/"/>
+      <tstamps>95de4bb3-73b9-4527-9dc6-6a359a4c81f0</tstamps>
+    </comp>
+    <comp ref="D91">
+      <value>DS14W-HT</value>
+      <footprint>Diode_SMD:D_SOD-123F</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/diyotlar-modul-diyotlar-ve-dogrultucular/schottky-diyotlar/DS14W-HT/468036</datasheet>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/e874b4f6-a944-4736-93f3-80be413ff93c/"/>
+      <tstamps>2e320bc9-8c7c-443a-8c99-a533e4b82fce</tstamps>
+    </comp>
+    <comp ref="D92">
+      <value>PESD5V0S1BA,115</value>
+      <footprint>Diode_SMD:D_SOD-323_HandSoldering</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/diyotlar-modul-diyotlar-ve-dogrultucular/tvs-diyotlar/PESD5V0S1BA115/488980</datasheet>
+      <libsource lib="Diode" part="ESD5Zxx" description="ESD Protection Diode, SOD-523"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/e874b4f6-a944-4736-93f3-80be413ff93c/"/>
+      <tstamps>41ec03ba-a674-42a1-867a-9240d5e4a186</tstamps>
+    </comp>
+    <comp ref="F1">
+      <value>750mA</value>
+      <footprint>Fuse:Fuse_1812_4532Metric</footprint>
+      <datasheet>https://ozdisan.com/devre-koruyucular/sigorta-bilesenleri/ptc-sigortalar/FSMD075-R/631870</datasheet>
+      <libsource lib="Device" part="Polyfuse" description="Resettable fuse, polymeric positive temperature coefficient"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/e874b4f6-a944-4736-93f3-80be413ff93c/"/>
+      <tstamps>6e5f2131-9bdd-413c-a44f-8d2a486f557e</tstamps>
+    </comp>
+    <comp ref="F2">
+      <value>200mA</value>
+      <footprint>Fuse:Fuse_0805_2012Metric</footprint>
+      <datasheet>https://ozdisan.com/devre-koruyucular/sigorta-bilesenleri/ptc-sigortalar/1206L020YR/416952</datasheet>
+      <libsource lib="Device" part="Polyfuse" description="Resettable fuse, polymeric positive temperature coefficient"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/e874b4f6-a944-4736-93f3-80be413ff93c/"/>
+      <tstamps>052860ab-6567-458c-abaf-c5ff8304dca2</tstamps>
+    </comp>
+    <comp ref="TP1">
+      <value>+5V</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/e874b4f6-a944-4736-93f3-80be413ff93c/"/>
+      <tstamps>54f20723-a5c8-4524-9e3d-7b8ef8d0178a</tstamps>
+    </comp>
+    <comp ref="TP2">
+      <value>GND</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/e874b4f6-a944-4736-93f3-80be413ff93c/"/>
+      <tstamps>7d024636-1a2a-4c3c-8009-b592b3713c40</tstamps>
+    </comp>
+    <comp ref="TP3">
+      <value>+3V3</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/e874b4f6-a944-4736-93f3-80be413ff93c/"/>
+      <tstamps>f5abd941-b9ce-4b68-9a4b-2652fda122f9</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>AMS1117-3.3</value>
+      <footprint>Package_TO_SOT_SMD:SOT-223-3_TabPin2</footprint>
+      <datasheet>http://www.advanced-monolithic.com/pdf/ds1117.pdf</datasheet>
+      <libsource lib="Regulator_Linear" part="AMS1117-3.3" description="1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"/>
+      <property name="Sheetname" value="Power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/Power/" tstamps="/e874b4f6-a944-4736-93f3-80be413ff93c/"/>
+      <tstamps>9ab922bb-2fc2-4b7c-bc98-10f976c32024</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>4.7uF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/kapasitorler/smt-smd-ve-mlcc-kapasitorler/CL10A475KP8NNNC/399400</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>005e3a53-8b4e-4687-96f4-81d166c7acdc</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/kapasitorler/smt-smd-ve-mlcc-kapasitorler/CL10B104KO8NNNC/342155</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>0c5d68fc-04db-4104-8c0e-a0f7708462c7</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>12pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/kapasitorler/smt-smd-ve-mlcc-kapasitorler/CL10C120JB8NNNC/339070</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>c986c5de-200e-4e77-b1f5-2f6a5fd06f2e</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>12pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/kapasitorler/smt-smd-ve-mlcc-kapasitorler/CL10C120JB8NNNC/339070</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>8417851e-c8a4-4782-b646-d758dcd5e41e</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/kapasitorler/smt-smd-ve-mlcc-kapasitorler/CL10B104KO8NNNC/342155</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>0bd7facb-0bc5-458e-aabc-1a9f0b9f3917</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/kapasitorler/smt-smd-ve-mlcc-kapasitorler/CL10B104KO8NNNC/342155</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>a7cd60bd-4c7b-4660-84bf-40751bae9363</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>12pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/kapasitorler/smt-smd-ve-mlcc-kapasitorler/CL10C120JB8NNNC/339070</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>4e51af80-9ad2-4145-a886-24052b2411c9</tstamps>
+    </comp>
+    <comp ref="C13">
+      <value>12pF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/kapasitorler/smt-smd-ve-mlcc-kapasitorler/CL10C120JB8NNNC/339070</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>c945a561-9d27-47c3-86b3-6843268a3e64</tstamps>
+    </comp>
+    <comp ref="C14">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/kapasitorler/smt-smd-ve-mlcc-kapasitorler/CL10B104KO8NNNC/342155</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>9093c798-d6d0-4fc2-8b74-4fb08f06b243</tstamps>
+    </comp>
+    <comp ref="C15">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/kapasitorler/smt-smd-ve-mlcc-kapasitorler/CL10B104KO8NNNC/342155</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>18ad68e7-d483-4e76-ae09-2703f5da1bba</tstamps>
+    </comp>
+    <comp ref="C16">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/kapasitorler/smt-smd-ve-mlcc-kapasitorler/CL10B104KO8NNNC/342155</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>a103d892-15e8-4d05-bd31-8722c63b883b</tstamps>
+    </comp>
+    <comp ref="C17">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/kapasitorler/smt-smd-ve-mlcc-kapasitorler/CL10B104KO8NNNC/342155</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>10efa53a-37f4-4203-8330-87fad3390626</tstamps>
+    </comp>
+    <comp ref="D93">
+      <value>PESD3V3L1BA,115</value>
+      <footprint>Diode_SMD:D_SOD-323_HandSoldering</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/diyotlar-modul-diyotlar-ve-dogrultucular/tvs-diyotlar/PESD3V3L1BA115/423535</datasheet>
+      <libsource lib="Diode" part="ESD5Zxx" description="ESD Protection Diode, SOD-523"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>189cc4a2-bd84-4546-bcf8-60aaff329e00</tstamps>
+    </comp>
+    <comp ref="D94">
+      <value>PESD3V3L1BA,115</value>
+      <footprint>Diode_SMD:D_SOD-323_HandSoldering</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/diyotlar-modul-diyotlar-ve-dogrultucular/tvs-diyotlar/PESD3V3L1BA115/423535</datasheet>
+      <libsource lib="Diode" part="ESD5Zxx" description="ESD Protection Diode, SOD-523"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>1f033372-cf94-4037-b5cf-98a27dea8dcc</tstamps>
+    </comp>
+    <comp ref="D95">
+      <value>PESD3V3L1BA,115</value>
+      <footprint>Diode_SMD:D_SOD-323_HandSoldering</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/diyotlar-modul-diyotlar-ve-dogrultucular/tvs-diyotlar/PESD3V3L1BA115/423535</datasheet>
+      <libsource lib="Diode" part="ESD5Zxx" description="ESD Protection Diode, SOD-523"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>c1bd9b60-6bd7-4f3a-a9f1-4a9361e21b73</tstamps>
+    </comp>
+    <comp ref="D96">
+      <value>PESD3V3L1BA,115</value>
+      <footprint>Diode_SMD:D_SOD-323_HandSoldering</footprint>
+      <datasheet>https://ozdisan.com/guc-yari-iletkenleri/diyotlar-modul-diyotlar-ve-dogrultucular/tvs-diyotlar/PESD3V3L1BA115/423535</datasheet>
+      <libsource lib="Diode" part="ESD5Zxx" description="ESD Protection Diode, SOD-523"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>50d32251-a673-49b3-ae30-72ba4fd05a50</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x04</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>2414f2ea-7527-4e88-9f93-66cf5c8b39a2</tstamps>
+    </comp>
+    <comp ref="R51">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0103T5E/336243</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>01f13471-0b50-4186-80b4-95dfb50a53bd</tstamps>
+    </comp>
+    <comp ref="R52">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0103T5E/336243</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>14986b84-54dd-4e37-bc6d-2326005bfd48</tstamps>
+    </comp>
+    <comp ref="R53">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0103T5E/336243</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>8aa5dc29-089c-4362-9229-482b35560d41</tstamps>
+    </comp>
+    <comp ref="R54">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0103T5E/336243</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>d28c2c9d-3dc5-4619-b062-0800b2d01b62</tstamps>
+    </comp>
+    <comp ref="R55">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0103T5E/336243</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>18ae67b3-45c0-48dd-b725-61b133ec06cb</tstamps>
+    </comp>
+    <comp ref="R56">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0103T5E/336243</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>79e90481-1947-4592-ac21-88a37cd711f7</tstamps>
+    </comp>
+    <comp ref="R57">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0103T5E/336243</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>02d19ef0-9356-4aa9-a07f-70b65fbf9d48</tstamps>
+    </comp>
+    <comp ref="R58">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0103T5E/336243</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>a2c3c16a-f3b5-4042-a209-6c57ae72fb21</tstamps>
+    </comp>
+    <comp ref="R59">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0103T5E/336243</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>90582ebd-ef61-4621-b347-125020b18bd5</tstamps>
+    </comp>
+    <comp ref="R60">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/direncler/smt-smd-ve-cip-direncler/0603SAJ0103T5E/336243</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>46cc52a0-0c35-466a-a43a-983188dcd68f</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>STM32F030C6Tx</value>
+      <footprint>Package_QFP:LQFP-48_7x7mm_P0.5mm</footprint>
+      <datasheet>https://ozdisan.com/entegre-devreler-icler/embedded-entegreler/mikroislemciler/STM32F030C6T6/462740</datasheet>
+      <libsource lib="MCU_ST_STM32F0" part="STM32F030C6Tx" description="ARM Cortex-M0 MCU, 32KB flash, 4KB RAM, 48MHz, 2.4-3.6V, 39 GPIO, LQFP-48"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>566468b5-80b5-4339-9ea4-ffcd9f6c8b7a</tstamps>
+    </comp>
+    <comp ref="Y1">
+      <value>32MHz</value>
+      <footprint>Crystal:Crystal_SMD_SeikoEpson_FA238-4Pin_3.2x2.5mm</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/kristaller-osilatorler-ve-rezanatorler/kristaller/ASX3F-32M-FA100A4/428916</datasheet>
+      <libsource lib="Device" part="Crystal_GND24" description="Four pin crystal, GND on pins 2 and 4"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>5ab9dd5d-0446-403a-ad82-963a128df33e</tstamps>
+    </comp>
+    <comp ref="Y2">
+      <value>32.768KHz</value>
+      <footprint>Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/kristaller-osilatorler-ve-rezanatorler/kristaller/RT3215-32-768-12-5-TR/341643</datasheet>
+      <libsource lib="Device" part="Crystal" description="Two pin crystal"/>
+      <property name="Sheetname" value="MCU"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <sheetpath names="/MCU/" tstamps="/1701f725-af76-4a6d-b401-e7d2d4d7228c/"/>
+      <tstamps>7043f367-e36f-4692-8ede-c17566369e28</tstamps>
+    </comp>
+    <comp ref="C18">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://ozdisan.com/pasif-komponentler/kapasitorler/smt-smd-ve-mlcc-kapasitorler/CL10B104KO8NNNC/342155</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Sheetname" value="Decoder"/>
+      <property name="Sheetfile" value="decoder.kicad_sch"/>
+      <sheetpath names="/Decoder/" tstamps="/6de12867-f03e-4d5e-a748-336858b2e903/"/>
+      <tstamps>612cd93f-2a2b-4d6d-b0f8-f7fe71b4ecd5</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>74HC138D</value>
+      <footprint>Package_SO:SOIC-16_3.9x9.9mm_P1.27mm</footprint>
+      <datasheet>https://ozdisan.com/entegre-devreler-icler/logic-entegreler/signal-switches-multiplexer-decoder-ve-encoder-entegreleri/74HC138D653/13688</datasheet>
+      <libsource lib="74xx_IEEE" part="74LS138" description=""/>
+      <property name="Sheetname" value="Decoder"/>
+      <property name="Sheetfile" value="decoder.kicad_sch"/>
+      <sheetpath names="/Decoder/" tstamps="/6de12867-f03e-4d5e-a748-336858b2e903/"/>
+      <tstamps>80cb9583-eb04-4126-bc2e-0c7a887db553</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="74xx_IEEE" part="74LS138">
+      <fields>
+        <field name="Reference">U?</field>
+        <field name="Value">74HC138D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A0" type="input"/>
+        <pin num="2" name="A1" type="input"/>
+        <pin num="3" name="A2" type="input"/>
+        <pin num="4" name="~{G2A}" type="input"/>
+        <pin num="5" name="~{G2B}" type="input"/>
+        <pin num="6" name="G1" type="input"/>
+        <pin num="7" name="~{Y7}" type="output"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="~{Y6}" type="output"/>
+        <pin num="10" name="~{Y5}" type="output"/>
+        <pin num="11" name="~{Y4}" type="output"/>
+        <pin num="12" name="~{Y3}" type="output"/>
+        <pin num="13" name="~{Y2}" type="output"/>
+        <pin num="14" name="~{Y1}" type="output"/>
+        <pin num="15" name="~{Y0}" type="output"/>
+        <pin num="16" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x06">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Polarized">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Crystal">
+      <description>Two pin crystal</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Crystal_GND24">
+      <description>Four pin crystal, GND on pins 2 and 4</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal_GND24</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Polyfuse">
+      <description>Resettable fuse, polymeric positive temperature coefficient</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>*polyfuse*</fp>
+        <fp>*PTC*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Polyfuse</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small">
+      <description>Resistor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="ESD5Zxx">
+      <description>ESD Protection Diode, SOD-523</description>
+      <docs>https://www.onsemi.com/pdf/datasheet/esd5z2.5t1-d.pdf</docs>
+      <footprints>
+        <fp>D?SOD?523*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">ESD5Zxx</field>
+        <field name="Footprint">Diode_SMD:D_SOD-523</field>
+        <field name="Datasheet">https://www.onsemi.com/pdf/datasheet/esd5z2.5t1-d.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU_ST_STM32F0" part="STM32F030C6Tx">
+      <description>ARM Cortex-M0 MCU, 32KB flash, 4KB RAM, 48MHz, 2.4-3.6V, 39 GPIO, LQFP-48</description>
+      <docs>http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00088500.pdf</docs>
+      <footprints>
+        <fp>LQFP*7x7mm*P0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">STM32F030C6Tx</field>
+        <field name="Footprint">Package_QFP:LQFP-48_7x7mm_P0.5mm</field>
+        <field name="Datasheet">http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00088500.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="PC13" type="bidirectional"/>
+        <pin num="3" name="PC14" type="bidirectional"/>
+        <pin num="4" name="PC15" type="bidirectional"/>
+        <pin num="5" name="PF0" type="input"/>
+        <pin num="6" name="PF1" type="input"/>
+        <pin num="7" name="NRST" type="input"/>
+        <pin num="8" name="VSSA" type="power_in"/>
+        <pin num="9" name="VDDA" type="power_in"/>
+        <pin num="10" name="PA0" type="bidirectional"/>
+        <pin num="11" name="PA1" type="bidirectional"/>
+        <pin num="12" name="PA2" type="bidirectional"/>
+        <pin num="13" name="PA3" type="bidirectional"/>
+        <pin num="14" name="PA4" type="bidirectional"/>
+        <pin num="15" name="PA5" type="bidirectional"/>
+        <pin num="16" name="PA6" type="bidirectional"/>
+        <pin num="17" name="PA7" type="bidirectional"/>
+        <pin num="18" name="PB0" type="bidirectional"/>
+        <pin num="19" name="PB1" type="bidirectional"/>
+        <pin num="20" name="PB2" type="bidirectional"/>
+        <pin num="21" name="PB10" type="bidirectional"/>
+        <pin num="22" name="PB11" type="bidirectional"/>
+        <pin num="23" name="VSS" type="power_in"/>
+        <pin num="24" name="VDD" type="power_in"/>
+        <pin num="25" name="PB12" type="bidirectional"/>
+        <pin num="26" name="PB13" type="bidirectional"/>
+        <pin num="27" name="PB14" type="bidirectional"/>
+        <pin num="28" name="PB15" type="bidirectional"/>
+        <pin num="29" name="PA8" type="bidirectional"/>
+        <pin num="30" name="PA9" type="bidirectional"/>
+        <pin num="31" name="PA10" type="bidirectional"/>
+        <pin num="32" name="PA11" type="bidirectional"/>
+        <pin num="33" name="PA12" type="bidirectional"/>
+        <pin num="34" name="PA13" type="bidirectional"/>
+        <pin num="35" name="PF6" type="bidirectional"/>
+        <pin num="36" name="PF7" type="bidirectional"/>
+        <pin num="37" name="PA14" type="bidirectional"/>
+        <pin num="38" name="PA15" type="bidirectional"/>
+        <pin num="39" name="PB3" type="bidirectional"/>
+        <pin num="40" name="PB4" type="bidirectional"/>
+        <pin num="41" name="PB5" type="bidirectional"/>
+        <pin num="42" name="PB6" type="bidirectional"/>
+        <pin num="43" name="PB7" type="bidirectional"/>
+        <pin num="44" name="BOOT0" type="input"/>
+        <pin num="45" name="PB8" type="bidirectional"/>
+        <pin num="46" name="PB9" type="bidirectional"/>
+        <pin num="47" name="VSS" type="power_in"/>
+        <pin num="48" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="AMS1117-3.3">
+      <description>1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223</description>
+      <docs>http://www.advanced-monolithic.com/pdf/ds1117.pdf</docs>
+      <footprints>
+        <fp>SOT?223*TabPin2*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AMS1117-3.3</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-223-3_TabPin2</field>
+        <field name="Datasheet">http://www.advanced-monolithic.com/pdf/ds1117.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VO" type="power_out"/>
+        <pin num="3" name="VI" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_BJT" part="BC817">
+      <description>0.8A Ic, 45V Vce, NPN Transistor, SOT-23</description>
+      <docs>https://www.onsemi.com/pub/Collateral/BC818-D.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BC817</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/BC818-D.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_FET" part="BSS84">
+      <description>-0.13A Id, -50V Vds, P-Channel MOSFET, SOT-23</description>
+      <docs>http://assets.nexperia.com/documents/data-sheet/BSS84.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BSS84</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">http://assets.nexperia.com/documents/data-sheet/BSS84.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="74xx_IEEE">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/74xx_IEEE.kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="Diode">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Diode.kicad_sym</uri>
+    </library>
+    <library logical="MCU_ST_STM32F0">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/MCU_ST_STM32F0.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Regulator_Linear.kicad_sym</uri>
+    </library>
+    <library logical="Transistor_BJT">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Transistor_BJT.kicad_sym</uri>
+    </library>
+    <library logical="Transistor_FET">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Transistor_FET.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/D0">
+      <node ref="U2" pin="42" pinfunction="PB6" pintype="bidirectional"/>
+      <node ref="U3" pin="1" pinfunction="A0" pintype="input"/>
+    </net>
+    <net code="2" name="/D1">
+      <node ref="U2" pin="41" pinfunction="PB5" pintype="bidirectional"/>
+      <node ref="U3" pin="2" pinfunction="A1" pintype="input"/>
+    </net>
+    <net code="3" name="/D2">
+      <node ref="U2" pin="40" pinfunction="PB4" pintype="bidirectional"/>
+      <node ref="U3" pin="3" pinfunction="A2" pintype="input"/>
+    </net>
+    <net code="4" name="/D3">
+      <node ref="U2" pin="39" pinfunction="PB3" pintype="bidirectional"/>
+      <node ref="U3" pin="6" pinfunction="G1" pintype="input"/>
+    </net>
+    <net code="6" name="/Decoder/+5V">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C18" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="F1" pin="1" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="Q13" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q14" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q15" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q16" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q19" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q20" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q23" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q24" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q5" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q6" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q7" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q8" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="R25" pin="1" pintype="passive"/>
+      <node ref="R26" pin="1" pintype="passive"/>
+      <node ref="R27" pin="1" pintype="passive"/>
+      <node ref="R28" pin="1" pintype="passive"/>
+      <node ref="R37" pin="1" pintype="passive"/>
+      <node ref="R38" pin="1" pintype="passive"/>
+      <node ref="R47" pin="1" pintype="passive"/>
+      <node ref="R48" pin="1" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="VI" pintype="power_in"/>
+      <node ref="U3" pin="16" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="7" name="/Hour and Minute/DOTS">
+      <node ref="D75" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D76" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="U2" pin="38" pinfunction="PA15" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="/Hour and Minute/SW1_1">
+      <node ref="R33" pin="2" pintype="passive"/>
+      <node ref="U2" pin="30" pinfunction="PA9" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="/Hour and Minute/SW1_2">
+      <node ref="R34" pin="2" pintype="passive"/>
+      <node ref="U2" pin="31" pinfunction="PA10" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="/Hour and Minute/SW1_3">
+      <node ref="R43" pin="2" pintype="passive"/>
+      <node ref="U2" pin="13" pinfunction="PA3" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="/Hour and Minute/SW1_4">
+      <node ref="R44" pin="2" pintype="passive"/>
+      <node ref="U2" pin="46" pinfunction="PB9" pintype="bidirectional"/>
+    </net>
+    <net code="12" name="/MCU/+3V3">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="F2" pin="1" pintype="passive"/>
+      <node ref="R51" pin="2" pintype="passive"/>
+      <node ref="TP3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U2" pin="24" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U2" pin="48" pinfunction="VDD" pintype="power_in"/>
+      <node ref="U2" pin="9" pinfunction="VDDA" pintype="power_in"/>
+    </net>
+    <net code="13" name="/MCU/BOOT0">
+      <node ref="R52" pin="2" pintype="passive"/>
+      <node ref="U2" pin="44" pinfunction="BOOT0" pintype="input"/>
+    </net>
+    <net code="14" name="/MCU/BTN0_A">
+      <node ref="D93" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R53" pin="1" pintype="passive"/>
+      <node ref="R57" pin="1" pintype="passive"/>
+    </net>
+    <net code="15" name="/MCU/BTN0_B">
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="R57" pin="2" pintype="passive"/>
+      <node ref="U2" pin="22" pinfunction="PB11" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="/MCU/BTN1_A">
+      <node ref="D94" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="R54" pin="1" pintype="passive"/>
+      <node ref="R58" pin="1" pintype="passive"/>
+    </net>
+    <net code="17" name="/MCU/BTN1_B">
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="R58" pin="2" pintype="passive"/>
+      <node ref="U2" pin="21" pinfunction="PB10" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="/MCU/BTN2_A">
+      <node ref="D95" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J1" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="R55" pin="1" pintype="passive"/>
+      <node ref="R59" pin="1" pintype="passive"/>
+    </net>
+    <net code="19" name="/MCU/BTN2_B">
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="R59" pin="2" pintype="passive"/>
+      <node ref="U2" pin="20" pinfunction="PB2" pintype="bidirectional"/>
+    </net>
+    <net code="20" name="/MCU/BTN3_A">
+      <node ref="D96" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J1" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="R56" pin="1" pintype="passive"/>
+      <node ref="R60" pin="1" pintype="passive"/>
+    </net>
+    <net code="21" name="/MCU/BTN3_B">
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="R60" pin="2" pintype="passive"/>
+      <node ref="U2" pin="19" pinfunction="PB1" pintype="bidirectional"/>
+    </net>
+    <net code="22" name="/MCU/NRST">
+      <node ref="R51" pin="1" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="NRST" pintype="input"/>
+    </net>
+    <net code="23" name="/MCU/OSC32_IN">
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="PC14" pintype="bidirectional"/>
+      <node ref="Y2" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="24" name="/MCU/OSC32_OUT">
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="PC13" pintype="bidirectional"/>
+      <node ref="Y2" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="25" name="/MCU/OSC_IN">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="PF0" pintype="input"/>
+      <node ref="Y1" pin="3" pinfunction="3" pintype="passive"/>
+    </net>
+    <net code="26" name="/MCU/OSC_OUT">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="PF1" pintype="input"/>
+      <node ref="Y1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="27" name="/MCU/SW0_1">
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="U2" pin="43" pinfunction="PB7" pintype="bidirectional"/>
+    </net>
+    <net code="28" name="/MCU/SW0_2">
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U2" pin="45" pinfunction="PB8" pintype="bidirectional"/>
+    </net>
+    <net code="29" name="/MCU/SW0_3">
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U2" pin="26" pinfunction="PB13" pintype="bidirectional"/>
+    </net>
+    <net code="30" name="/MCU/SW0_4">
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="U2" pin="27" pinfunction="PB14" pintype="bidirectional"/>
+    </net>
+    <net code="31" name="/MCU/SW0_5">
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="U2" pin="28" pinfunction="PB15" pintype="bidirectional"/>
+    </net>
+    <net code="32" name="/MCU/SW0_6">
+      <node ref="R18" pin="2" pintype="passive"/>
+      <node ref="U2" pin="29" pinfunction="PA8" pintype="bidirectional"/>
+    </net>
+    <net code="33" name="/MCU/SW0_7">
+      <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="U2" pin="32" pinfunction="PA11" pintype="bidirectional"/>
+    </net>
+    <net code="34" name="/MCU/SW0_8">
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="U2" pin="33" pinfunction="PA12" pintype="bidirectional"/>
+    </net>
+    <net code="35" name="/MCU/SWCLK">
+      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U2" pin="37" pinfunction="PA14" pintype="bidirectional"/>
+    </net>
+    <net code="36" name="/MCU/SWDIO">
+      <node ref="J2" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U2" pin="34" pinfunction="PA13" pintype="bidirectional"/>
+    </net>
+    <net code="38" name="/Power/+5V_IN">
+      <node ref="D91" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="39" name="/Y0">
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D17" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D25" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D33" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D41" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D49" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D57" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D61" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D68" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D77" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D84" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D9" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U3" pin="15" pinfunction="~{Y0}" pintype="output"/>
+    </net>
+    <net code="40" name="/Y1">
+      <node ref="D10" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D18" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D26" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D34" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D42" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D50" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D58" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D62" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D69" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D78" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D85" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U3" pin="14" pinfunction="~{Y1}" pintype="output"/>
+    </net>
+    <net code="41" name="/Y2">
+      <node ref="D11" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D19" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D27" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D35" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D43" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D51" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D59" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D63" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D70" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D79" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D86" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U3" pin="13" pinfunction="~{Y2}" pintype="output"/>
+    </net>
+    <net code="42" name="/Y3">
+      <node ref="D12" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D20" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D28" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D36" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D44" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D52" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D60" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D64" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D71" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D80" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D87" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U3" pin="12" pinfunction="~{Y3}" pintype="output"/>
+    </net>
+    <net code="43" name="/Y4">
+      <node ref="D13" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D21" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D29" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D37" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D45" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D5" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D53" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D65" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D72" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D81" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D88" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U3" pin="11" pinfunction="~{Y4}" pintype="output"/>
+    </net>
+    <net code="44" name="/Y5">
+      <node ref="D14" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D22" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D30" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D38" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D46" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D54" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D6" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D66" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D73" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D82" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D89" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U3" pin="10" pinfunction="~{Y5}" pintype="output"/>
+    </net>
+    <net code="45" name="/Y6">
+      <node ref="D15" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D23" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D31" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D39" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D47" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D55" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D67" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D7" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D74" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D83" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D90" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U3" pin="9" pinfunction="~{Y6}" pintype="output"/>
+    </net>
+    <net code="46" name="/Y7">
+      <node ref="D16" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D24" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D32" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D40" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D48" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D56" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D8" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="U3" pin="7" pinfunction="~{Y7}" pintype="output"/>
+    </net>
+    <net code="50" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C18" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="D92" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D93" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D94" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D95" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D96" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J2" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="E" pintype="passive"/>
+      <node ref="Q10" pin="2" pinfunction="E" pintype="passive"/>
+      <node ref="Q11" pin="2" pinfunction="E" pintype="passive"/>
+      <node ref="Q12" pin="2" pinfunction="E" pintype="passive"/>
+      <node ref="Q17" pin="2" pinfunction="E" pintype="passive"/>
+      <node ref="Q18" pin="2" pinfunction="E" pintype="passive"/>
+      <node ref="Q2" pin="2" pinfunction="E" pintype="passive"/>
+      <node ref="Q21" pin="2" pinfunction="E" pintype="passive"/>
+      <node ref="Q22" pin="2" pinfunction="E" pintype="passive"/>
+      <node ref="Q3" pin="2" pinfunction="E" pintype="passive"/>
+      <node ref="Q4" pin="2" pinfunction="E" pintype="passive"/>
+      <node ref="Q9" pin="2" pinfunction="E" pintype="passive"/>
+      <node ref="R41" pin="1" pintype="passive"/>
+      <node ref="R42" pin="1" pintype="passive"/>
+      <node ref="R52" pin="1" pintype="passive"/>
+      <node ref="R53" pin="2" pintype="passive"/>
+      <node ref="R54" pin="2" pintype="passive"/>
+      <node ref="R55" pin="2" pintype="passive"/>
+      <node ref="R56" pin="2" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="23" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U2" pin="47" pinfunction="VSS" pintype="power_in"/>
+      <node ref="U2" pin="8" pinfunction="VSSA" pintype="power_in"/>
+      <node ref="U3" pin="4" pinfunction="~{G2A}" pintype="input"/>
+      <node ref="U3" pin="5" pinfunction="~{G2B}" pintype="input"/>
+      <node ref="U3" pin="8" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="51" name="Net-(C5-Pad1)">
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="F2" pin="2" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="VO" pintype="power_out"/>
+    </net>
+    <net code="52" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D5" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D6" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D7" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D8" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+    </net>
+    <net code="53" name="Net-(D10-Pad2)">
+      <node ref="D10" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D11" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D12" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D13" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D14" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D15" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D16" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D9" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+    </net>
+    <net code="54" name="Net-(D17-Pad2)">
+      <node ref="D17" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D18" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D19" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D20" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D21" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D22" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D23" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D24" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+    </net>
+    <net code="55" name="Net-(D25-Pad2)">
+      <node ref="D25" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D26" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D27" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D28" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D29" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D30" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D31" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D32" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+    </net>
+    <net code="56" name="Net-(D33-Pad2)">
+      <node ref="D33" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D34" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D35" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D36" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D37" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D38" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D39" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D40" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R29" pin="2" pintype="passive"/>
+    </net>
+    <net code="57" name="Net-(D41-Pad2)">
+      <node ref="D41" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D42" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D43" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D44" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D45" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D46" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D47" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D48" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R30" pin="2" pintype="passive"/>
+    </net>
+    <net code="58" name="Net-(D49-Pad2)">
+      <node ref="D49" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D50" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D51" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D52" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D53" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D54" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D55" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D56" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R31" pin="2" pintype="passive"/>
+    </net>
+    <net code="59" name="Net-(D57-Pad2)">
+      <node ref="D57" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D58" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D59" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D60" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R32" pin="2" pintype="passive"/>
+    </net>
+    <net code="60" name="Net-(D61-Pad2)">
+      <node ref="D61" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D62" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D63" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D64" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D65" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D66" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D67" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R39" pin="2" pintype="passive"/>
+    </net>
+    <net code="61" name="Net-(D68-Pad2)">
+      <node ref="D68" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D69" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D70" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D71" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D72" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D73" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D74" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R40" pin="2" pintype="passive"/>
+    </net>
+    <net code="62" name="Net-(D75-Pad1)">
+      <node ref="D75" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R41" pin="2" pintype="passive"/>
+    </net>
+    <net code="63" name="Net-(D76-Pad1)">
+      <node ref="D76" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R42" pin="2" pintype="passive"/>
+    </net>
+    <net code="64" name="Net-(D77-Pad2)">
+      <node ref="D77" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D78" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D79" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D80" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D81" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D82" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D83" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R49" pin="2" pintype="passive"/>
+    </net>
+    <net code="65" name="Net-(D84-Pad2)">
+      <node ref="D84" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D85" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D86" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D87" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D88" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D89" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D90" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="R50" pin="2" pintype="passive"/>
+    </net>
+    <net code="66" name="Net-(D91-Pad1)">
+      <node ref="D91" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D92" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="F1" pin="2" pintype="passive"/>
+    </net>
+    <net code="67" name="Net-(Q1-Pad1)">
+      <node ref="Q1" pin="1" pinfunction="B" pintype="input"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="68" name="Net-(Q1-Pad3)">
+      <node ref="Q1" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+    </net>
+    <net code="69" name="Net-(Q2-Pad1)">
+      <node ref="Q2" pin="1" pinfunction="B" pintype="input"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+    </net>
+    <net code="70" name="Net-(Q2-Pad3)">
+      <node ref="Q2" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+    </net>
+    <net code="71" name="Net-(Q3-Pad1)">
+      <node ref="Q3" pin="1" pinfunction="B" pintype="input"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+    </net>
+    <net code="72" name="Net-(Q3-Pad3)">
+      <node ref="Q3" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+    </net>
+    <net code="73" name="Net-(Q4-Pad1)">
+      <node ref="Q4" pin="1" pinfunction="B" pintype="input"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="74" name="Net-(Q4-Pad3)">
+      <node ref="Q4" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+    </net>
+    <net code="75" name="Net-(Q5-Pad1)">
+      <node ref="Q5" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+    </net>
+    <net code="76" name="Net-(Q5-Pad3)">
+      <node ref="Q5" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+    </net>
+    <net code="77" name="Net-(Q6-Pad1)">
+      <node ref="Q6" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+    </net>
+    <net code="78" name="Net-(Q6-Pad3)">
+      <node ref="Q6" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+    </net>
+    <net code="79" name="Net-(Q7-Pad1)">
+      <node ref="Q7" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+    </net>
+    <net code="80" name="Net-(Q7-Pad3)">
+      <node ref="Q7" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+    </net>
+    <net code="81" name="Net-(Q8-Pad1)">
+      <node ref="Q8" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+    </net>
+    <net code="82" name="Net-(Q8-Pad3)">
+      <node ref="Q8" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+    </net>
+    <net code="83" name="Net-(Q9-Pad1)">
+      <node ref="Q9" pin="1" pinfunction="B" pintype="input"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+    </net>
+    <net code="84" name="Net-(Q9-Pad3)">
+      <node ref="Q9" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="R21" pin="2" pintype="passive"/>
+    </net>
+    <net code="85" name="Net-(Q10-Pad1)">
+      <node ref="Q10" pin="1" pinfunction="B" pintype="input"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+    </net>
+    <net code="86" name="Net-(Q10-Pad3)">
+      <node ref="Q10" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="R22" pin="2" pintype="passive"/>
+    </net>
+    <net code="87" name="Net-(Q11-Pad1)">
+      <node ref="Q11" pin="1" pinfunction="B" pintype="input"/>
+      <node ref="R19" pin="1" pintype="passive"/>
+    </net>
+    <net code="88" name="Net-(Q11-Pad3)">
+      <node ref="Q11" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="R23" pin="2" pintype="passive"/>
+    </net>
+    <net code="89" name="Net-(Q12-Pad1)">
+      <node ref="Q12" pin="1" pinfunction="B" pintype="input"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+    </net>
+    <net code="90" name="Net-(Q12-Pad3)">
+      <node ref="Q12" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="R24" pin="2" pintype="passive"/>
+    </net>
+    <net code="91" name="Net-(Q13-Pad1)">
+      <node ref="Q13" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="R25" pin="2" pintype="passive"/>
+    </net>
+    <net code="92" name="Net-(Q13-Pad3)">
+      <node ref="Q13" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R29" pin="1" pintype="passive"/>
+    </net>
+    <net code="93" name="Net-(Q14-Pad1)">
+      <node ref="Q14" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="R26" pin="2" pintype="passive"/>
+    </net>
+    <net code="94" name="Net-(Q14-Pad3)">
+      <node ref="Q14" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R30" pin="1" pintype="passive"/>
+    </net>
+    <net code="95" name="Net-(Q15-Pad1)">
+      <node ref="Q15" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R23" pin="1" pintype="passive"/>
+      <node ref="R27" pin="2" pintype="passive"/>
+    </net>
+    <net code="96" name="Net-(Q15-Pad3)">
+      <node ref="Q15" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R31" pin="1" pintype="passive"/>
+    </net>
+    <net code="97" name="Net-(Q16-Pad1)">
+      <node ref="Q16" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R24" pin="1" pintype="passive"/>
+      <node ref="R28" pin="2" pintype="passive"/>
+    </net>
+    <net code="98" name="Net-(Q16-Pad3)">
+      <node ref="Q16" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R32" pin="1" pintype="passive"/>
+    </net>
+    <net code="99" name="Net-(Q17-Pad1)">
+      <node ref="Q17" pin="1" pinfunction="B" pintype="input"/>
+      <node ref="R33" pin="1" pintype="passive"/>
+    </net>
+    <net code="100" name="Net-(Q17-Pad3)">
+      <node ref="Q17" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="R35" pin="2" pintype="passive"/>
+    </net>
+    <net code="101" name="Net-(Q18-Pad1)">
+      <node ref="Q18" pin="1" pinfunction="B" pintype="input"/>
+      <node ref="R34" pin="1" pintype="passive"/>
+    </net>
+    <net code="102" name="Net-(Q18-Pad3)">
+      <node ref="Q18" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="R36" pin="2" pintype="passive"/>
+    </net>
+    <net code="103" name="Net-(Q19-Pad1)">
+      <node ref="Q19" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R35" pin="1" pintype="passive"/>
+      <node ref="R37" pin="2" pintype="passive"/>
+    </net>
+    <net code="104" name="Net-(Q19-Pad3)">
+      <node ref="Q19" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R39" pin="1" pintype="passive"/>
+    </net>
+    <net code="105" name="Net-(Q20-Pad1)">
+      <node ref="Q20" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R36" pin="1" pintype="passive"/>
+      <node ref="R38" pin="2" pintype="passive"/>
+    </net>
+    <net code="106" name="Net-(Q20-Pad3)">
+      <node ref="Q20" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R40" pin="1" pintype="passive"/>
+    </net>
+    <net code="107" name="Net-(Q21-Pad1)">
+      <node ref="Q21" pin="1" pinfunction="B" pintype="input"/>
+      <node ref="R43" pin="1" pintype="passive"/>
+    </net>
+    <net code="108" name="Net-(Q21-Pad3)">
+      <node ref="Q21" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="R45" pin="2" pintype="passive"/>
+    </net>
+    <net code="109" name="Net-(Q22-Pad1)">
+      <node ref="Q22" pin="1" pinfunction="B" pintype="input"/>
+      <node ref="R44" pin="1" pintype="passive"/>
+    </net>
+    <net code="110" name="Net-(Q22-Pad3)">
+      <node ref="Q22" pin="3" pinfunction="C" pintype="passive"/>
+      <node ref="R46" pin="2" pintype="passive"/>
+    </net>
+    <net code="111" name="Net-(Q23-Pad1)">
+      <node ref="Q23" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R45" pin="1" pintype="passive"/>
+      <node ref="R47" pin="2" pintype="passive"/>
+    </net>
+    <net code="112" name="Net-(Q23-Pad3)">
+      <node ref="Q23" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R49" pin="1" pintype="passive"/>
+    </net>
+    <net code="113" name="Net-(Q24-Pad1)">
+      <node ref="Q24" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R46" pin="1" pintype="passive"/>
+      <node ref="R48" pin="2" pintype="passive"/>
+    </net>
+    <net code="114" name="Net-(Q24-Pad3)">
+      <node ref="Q24" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R50" pin="1" pintype="passive"/>
+    </net>
+    <net code="117" name="unconnected-(U2-Pad4)">
+      <node ref="U2" pin="4" pinfunction="PC15" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="118" name="unconnected-(U2-Pad10)">
+      <node ref="U2" pin="10" pinfunction="PA0" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="119" name="unconnected-(U2-Pad11)">
+      <node ref="U2" pin="11" pinfunction="PA1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="120" name="unconnected-(U2-Pad12)">
+      <node ref="U2" pin="12" pinfunction="PA2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="121" name="unconnected-(U2-Pad14)">
+      <node ref="U2" pin="14" pinfunction="PA4" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="122" name="unconnected-(U2-Pad15)">
+      <node ref="U2" pin="15" pinfunction="PA5" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="123" name="unconnected-(U2-Pad16)">
+      <node ref="U2" pin="16" pinfunction="PA6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="124" name="unconnected-(U2-Pad17)">
+      <node ref="U2" pin="17" pinfunction="PA7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="125" name="unconnected-(U2-Pad18)">
+      <node ref="U2" pin="18" pinfunction="PB0" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="126" name="unconnected-(U2-Pad25)">
+      <node ref="U2" pin="25" pinfunction="PB12" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="127" name="unconnected-(U2-Pad35)">
+      <node ref="U2" pin="35" pinfunction="PF6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="128" name="unconnected-(U2-Pad36)">
+      <node ref="U2" pin="36" pinfunction="PF7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="129" name="unconnected-(Y1-Pad2)">
+      <node ref="Y1" pin="2" pinfunction="2" pintype="passive+no_connect"/>
+    </net>
+    <net code="130" name="unconnected-(Y1-Pad4)">
+      <node ref="Y1" pin="4" pinfunction="4" pintype="passive+no_connect"/>
+    </net>
+  </nets>
+</export>
